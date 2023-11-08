@@ -17,9 +17,9 @@ function Sidebar() {
             <div css={imageBox} />
             <div css={groupBoxWrapper}>
                 <div css={groupBox}>
-                    {sidebarMenuList.map((e, index) => (
+                    {sidebarMenuList.map(e => (
                         <div key={e.title} className="group-box">
-                            <div className={pathname === e.route ? "filled" : ""} onClick={navigateToPage(e.route, index)} css={sideBarLabel}>
+                            <div className={e.route === pathname ? "filled" : ""} onClick={navigateToPage(e.route)} css={sideBarLabel}>
                                 {e.title}
                             </div>
                         </div>
