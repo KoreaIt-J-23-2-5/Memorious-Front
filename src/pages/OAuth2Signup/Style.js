@@ -9,17 +9,18 @@ export const logoBox = css`
     }
 `;
 
-export const signupText = css`
+export const introText = css`
     padding: 30px 0;
     text-align: center;
     color: #6f6257;
     & p {
         line-height: 25px;
+        font-family: "Pretendard-SemiBold";
         font-size: 22px;
     }
 `;
 
-export const signupContainer = css`
+export const inputContainer = css`
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -31,7 +32,7 @@ export const signupContainer = css`
     background-color: #fffbf5;
 `;
 
-export const inputContainer = css`
+export const inputBox = css`
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -43,7 +44,7 @@ export const inputContainer = css`
     }
 `;
 
-export const inputBox = css`
+export const input = css`
     display: flex;
     justify-content: space-between;
     align-items: center;

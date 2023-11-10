@@ -33,10 +33,11 @@ function OAuth2Signup() {
         } catch (error) {
             console.error(error.response);
         }
-        // await instance.post("/api/auth/oauth2/signin", signupUser); 
+        // await instance.post("/api/auth/oauth2/signin", signupUser);
         // localStorage.setItem("accessToken", `Bearer ${response.data}`);
         alert("회원가입 성공");
-        window.location.reload();
+
+        window.location.href = "http://localhost:8080/oauth2/authorization/naver";
     };
 
     return (
@@ -46,22 +47,22 @@ function OAuth2Signup() {
                     <div css={S.logoBox}>
                         <img src="/assets/images/logo.png" alt="" />
                     </div>
-                    <div css={S.signupText}>
+                    <div css={S.introText}>
                         <p>
                             추가 정보를 입력하고
                             <br />
                             회원가입을 완료하세요.
                         </p>
                     </div>
-                    <div css={S.signupContainer}>
-                        <div css={S.inputContainer}>
+                    <div css={S.inputContainer}>
+                        <div css={S.inputBox}>
                             <div>이메일</div>
-                            <input type="email" css={S.inputBox} onChange={handleInputChange} name="email" />
+                            <input type="email" css={S.input} onChange={handleInputChange} name="email" />
                         </div>
 
-                        <div css={S.inputContainer}>
+                        <div css={S.inputBox}>
                             <div>별명</div>
-                            <input type="text" css={S.inputBox} onChange={handleInputChange} name="nickname" />
+                            <input type="text" css={S.input} onChange={handleInputChange} name="nickname" />
                         </div>
                     </div>
                     <button css={S.signupButton} onClick={handleSignupSubmit}>
