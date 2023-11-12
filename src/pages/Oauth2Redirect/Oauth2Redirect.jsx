@@ -5,6 +5,7 @@ import { instance } from "../../config";
 function Oauth2Redirect({ type }) {
     const navigate = useNavigate();
     const token = new URL(window.location.href).searchParams.get("token");
+    console.log("token >> ", token);
 
     useEffect(() => {
         if (type === "naver") {
