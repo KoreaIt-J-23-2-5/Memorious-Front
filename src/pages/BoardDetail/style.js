@@ -8,42 +8,79 @@ export const boardDetailBox = css`
     flex-direction: column;
     justify-content: flex-start;
     align-items: center;
+    & * {
+        color: #6f6257;
+    }
 `;
 
 export const boardDetailContainer = css`
     width: calc(100% - 40px);
     min-width: 800px;
-    height: 50px;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
+    flex-direction: column;
     margin: 30px;
-    background-color: #fffbf5;
-    border-radius: 6px;
     border: 1px solid #6f6257;
-    .detail-header-left {
-        width: 80px;
+    border-radius: 6px;
+    padding: 20px;
+    background-color: #fffbf5;
+    .detail-header-top {
+        /* padding: 8px; */
+        margin-top: 10px;
+        width: 100%;
+        /* height: 40px; */
+        & p {
+            font-size: 25px;
+            font-family: "Pretendard-Medium";
+        }
+    }
+    .detail-header-bottom {
+        margin-top: 10px;
+        width: 100%;
+        height: 50px;
         display: flex;
         justify-content: space-between;
         align-items: center;
     }
-    .border-left-box {
-        width: 100%;
-        height: 50px;
+    .header-bottom-left {
+        width: 200px;
         display: flex;
-        justify-content: center;
-        align-items: center;
-        border-right: 1px solid #6f6357;
+        /* justify-content: space-between; */
+        /* align-items: center; */
+    }
+    .profile-img {
+        border: 1px solid #ddd;
+        border-radius: 50%;
+        width: 40px;
+        height: 40px;
+        & img {
+            width: 100%;
+        }
+    }
+    .nickname-and-date {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        margin-left: 10px;
+    }
+    .header-bottom-right {
+        cursor: pointer;
+        & button {
+            border: none;
+            border-radius: 6px;
+            outline: none;
+            width: 60px;
+            padding: 6px;
+            color: #fffbf5;
+            background-color: #6f6257;
+            font-size: 14px;
+        }
     }
     span {
         color: #666;
-        font-size: 1.2rem;
-        width: max-content;
+        /* font-size: 1.2rem; */
+        /* width: max-content; */
         padding: 10px;
         &.board-id {
-        }
-        &.title {
-            flex-grow: 1;
         }
         &.nickname {
         }
