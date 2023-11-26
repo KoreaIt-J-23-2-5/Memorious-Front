@@ -33,7 +33,6 @@ function BoardWrite() {
     // get categoryList -> options에 set
     useEffect(() => {
         instance.get("api/board/categories").then(response => {
-            // setCategoryCount(response.data.length + 1);
             setOptions(
                 response.data.map(category => {
                     return {
@@ -113,9 +112,6 @@ function BoardWrite() {
         }
 
         try {
-            console.log("options >> ", options);
-            console.log("selectedOption >> ", selectedOption);
-            console.log("boardData >> ", boardData);
             await instance.post("api/board/content", boardData);
             alert("게시글 작성이 완료되었습니다.");
             navigate("/board");
