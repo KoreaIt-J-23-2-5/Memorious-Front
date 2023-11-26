@@ -1,13 +1,11 @@
-/* eslint-disable */
 import React, { useEffect, useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { useQueryClient } from "react-query";
 import ReactQuill from "react-quill";
-/** @jsxImportSource @emotion/react */
+import { Select } from "antd";
 import * as S from "./style";
 import { instance } from "../../config";
-import ReactSelect from "react-select";
-import { useNavigate } from "react-router-dom";
-import { Select } from "antd";
+/** @jsxImportSource @emotion/react */
 
 function BoardWrite() {
     const navigate = useNavigate();
@@ -17,14 +15,14 @@ function BoardWrite() {
         categoryId: null,
         categoryName: "",
     });
-
+    // 추가할 카테고리
     const [newCategory, setNewCategory] = useState("");
+    // 카테고리 옵션리스트
     const [options, setOptions] = useState([]);
+    // 선택된 옵션
     const [selectedOption, setSelectedOption] = useState(options[0]);
 
     const queryClient = useQueryClient();
-
-    // 로그인 안돼있을 시
     const principalState = queryClient.getQueryState("getPrincipal");
 
     if (!principalState?.data?.data) {
@@ -32,9 +30,10 @@ function BoardWrite() {
         window.location.replace("/auth/oauth2/signin");
     }
 
-    // get categoryList -> options
+    // get categoryList -> options에 set
     useEffect(() => {
         instance.get("api/board/categories").then(response => {
+            // setCategoryCount(response.data.length + 1);
             setOptions(
                 response.data.map(category => {
                     return {
@@ -48,44 +47,32 @@ function BoardWrite() {
 
     // 카테고리 추가
     const handleAddCategory = () => {
-        const categoryName = window.prompt("새로 추가할 카테고리를 입력하세요."); //모달창으로
+        const categoryName = window.prompt("새로 추가할 카테고리를 입력하세요."); // 모달창으로
         if (!categoryName) {
             return;
         }
         setNewCategory(categoryName);
     };
-    const remove = value => {
-        setOptions(options.filter(option => option.value !== value));
-    };
+
     useEffect(() => {
         if (newCategory) {
             const newOption = { value: 0, label: newCategory };
 
-            setSelectedOption(newOption);
             const tempOptions = [...options];
             tempOptions[tempOptions.length] = newOption;
-            setOptions(tempOptions);
-            // 처음에 없을 경우
-            // setOptions([...options, newOption]);
 
-            // 쌤한테 물어보기: value를 0으로 뒀을 때, 두 개 이상 추가는 안되게
-
-            // const result = options.filter(option => option.value === 0);
-
-            // if (!result.length === 0) {
-            //     // value가 0인 옵션이 있음-> 그 요소를 제거함
-            //     setOptions(options.filter(option => option.value === 0))
-            // }
-            // setOptions([...options, newOption]);
-
-            // if (options.map(option => option.value).includes(newOption.value)) {
-            //     setOptions(options.filter(option => option.value === 0))
-            // }
-            // setOptions([...options, newOption]);
+            if (options.map(option => option.value).includes(newOption.value)) {
+                const result = options.filter(option => option.value !== 0);
+                result.push(newOption);
+                setOptions(result);
+            } else {
+                setOptions([...options, newOption]);
+            }
+            setSelectedOption(newOption);
         }
     }, [newCategory]);
 
-    //quill
+    // quill
     const modules = {
         toolbar: {
             container: [[{ header: [1, 2, 3, false] }], ["bold", "underline"], ["image"]],
@@ -94,16 +81,7 @@ function BoardWrite() {
 
     // 셀렉트 옵션을 클릭하면 selectedOption을 set 해줌
     const handleSelectChange = (value, option) => {
-        console.log("선택된 option", option);
         setSelectedOption(option);
-        // console.log("selectedOption >> ", selectedOption);
-
-        // setBoardData({
-        //     ...boardData,
-        //     categoryId: option.value,
-        //     categoryName: option.label,
-        // });
-        // console.log("옵션선택 후 boardData >> ", boardData);
     };
 
     useEffect(() => {

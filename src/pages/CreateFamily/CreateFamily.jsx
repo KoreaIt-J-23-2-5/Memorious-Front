@@ -3,6 +3,10 @@ import { useQuery } from "react-query";
 import { useNavigate } from "react-router";
 import InviteConfirmModal from "../../component/Invite/InviteConfirmModal";
 import { instance } from "../../config";
+import { mainContainer, mainLayout } from "../OAuth2Signin/style";
+import { inputBox, inputContainer, logoBox, signupContainer, signupText } from "../OAuth2Signup/style";
+import { createFamilyButton, emailCheckText } from "./style";
+/** @jsxImportSource @emotion/react */
 
 function CreateFamily() {
     const navigate = useNavigate();
@@ -61,7 +65,6 @@ function CreateFamily() {
             ...familyData,
             [e.target.name]: e.target.value,
         });
-        console.log(familyData);
     };
 
     const createFamilySubmit = async () => {
@@ -73,7 +76,7 @@ function CreateFamily() {
             };
 
             await instance.post("api/create/family", familyData, option);
-            window.alert("가족 페이지 생성이 완료되었습니다.");
+            alert("가족 페이지 생성이 완료되었습니다.");
             navigate("/");
         } catch (error) {
             console.error(error);
@@ -82,6 +85,27 @@ function CreateFamily() {
 
     return (
         <>
+            <div css={mainLayout}>
+                <div css={mainContainer}>
+                    <div css={logoBox}>
+                        <img src="/assets/images/logo.png" alt="" />
+                    </div>
+                    <div css={signupText}>
+                        <p>우리 가족을 위한 기억 공간을 생성하세요</p>
+                    </div>
+                    <div css={signupContainer}>
+                        <div css={inputContainer}>
+                            <div>가족 이름</div>
+                            <input css={inputBox} onChange={handleInputChange} name="familyName" type="text" />
+                        </div>
+                    </div>
+                    <p css={emailCheckText}>가족으로부터 초대받으셨나요? 초대받은 이메일을 확인해주세요</p>
+                    <button onClick={createFamilySubmit} css={createFamilyButton}>
+                        가입하기
+                    </button>
+                    <InviteConfirmModal open={isInvited} setOpen={setIsInvited} />
+                </div>
+            </div>
             <h3>우리 가족을 위한 기억 공간을 생성하세요</h3>
             <div>
                 <span>가족 이름: </span> <input onChange={handleInputChange} name="familyName" type="text" />
