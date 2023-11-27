@@ -13,7 +13,7 @@ export const RepeatCyclePreset = [
     },
     {
         value: "month",
-        label: "매달",
+        label: "매월",
     },
     {
         value: "year",
