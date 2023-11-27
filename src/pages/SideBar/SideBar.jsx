@@ -1,8 +1,8 @@
 /* eslint-disable no-unused-vars */
-import React, { useEffect } from "react";
-import { Outlet, useNavigate } from "react-router-dom";
-import { useQuery } from "react-query";
 import { css } from "@emotion/react";
+import React from "react";
+import { useQuery } from "react-query";
+import { Outlet } from "react-router-dom";
 import { Reset } from "styled-reset";
 import SidebarContainer from "../../component/Sidebar";
 import { instance } from "../../config";
@@ -63,22 +63,15 @@ function SideBar() {
         },
     );
 
-    // /* 자동 로그인 라우팅 */
-    // useEffect(() => {
-    //     if (!localStorage.getItem("accessToken")) {
-    //         alert("로그인");
-    //         window.location.replace("/auth/oauth2/signin", { replace: false });
-    //     }
-    // }, []);
-    return (
+    return getPrincipal.isSuccess ? (
         <>
             <Reset />
             <div id="parent-container" css={mainContainer}>
-                <SidebarContainer />
+                <SidebarContainer principal={!getPrincipal.isLoading && getPrincipal.data.data} />
                 <div css={contentsContainer}>{!getPrincipal.isLoading && <Outlet />}</div>
             </div>
         </>
-    );
+    ) : null;
 }
 
 export default SideBar;
