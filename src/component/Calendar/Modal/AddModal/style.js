@@ -47,3 +47,9 @@ export const STime = css`
         border-bottom-left-radius: 0px;
     }
 `;
+
+export const SDeleteBtn = css`
+    position: relative;
+    top: 64px;
+    left: -20px;
+`;

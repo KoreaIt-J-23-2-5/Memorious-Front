@@ -11,8 +11,8 @@ import { calendarRecoil } from "../../../../store/atoms/calendarAtoms";
 import preprocessData from "../../../../utils/Calendar/preprocessData";
 import sortCalendarData from "../../../../utils/Calendar/sortCalendarData";
 import LabelColorBadge from "./LabelColorBadge/LabelColorBadge";
-import { SAttendeeSelect, SCheckbox, SColorPicker, SCycleInput, SCycleSelect, SDatePicker, SDescriptionInput, SLocationInput, SModal, SRadio, SRadioGroup, SRangePicker, SRepeatInput, SSelectOption, STimePicker, STitleInput } from "./StyledComponents/style";
-import { SCycleBox, SFlexBox, SPanelBox, SRepeatBox, SRepeatEnd, SRepeatTypeBox, STime } from "./style";
+import { SAttendeeSelect, SBtn, SCheckbox, SColorPicker, SCycleInput, SCycleSelect, SDatePicker, SDescriptionInput, SLocationInput, SModal, SRadio, SRadioGroup, SRangePicker, SRepeatInput, SSelectOption, STimePicker, STitleInput } from "./StyledComponents/style";
+import { SCycleBox, SDeleteBtn, SFlexBox, SPanelBox, SRepeatBox, SRepeatEnd, SRepeatTypeBox, STime } from "./style";
 /** @jsxImportSource @emotion/react */
 
 function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
@@ -67,12 +67,6 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
     const [scheduleData, setScheduleData] = useRecoilState(calendarRecoil);
     const inputRef = useRef(null);
 
-    // const mutation = useMutation(() => instance.get(`/api/calendar/schedule/${date.format("YYYY-MM")}`), {
-    //     onSuccess: () => {
-    //         queryClient.refetchQueries(["getSchedule"]);
-    //     },
-    // });
-
     const fetchData = async () => {
         try {
             const response = await instance.get(`/api/calendar/schedule/${dayjs(scheduleInput.startDate).format("YYYY-MM")}`);
@@ -113,9 +107,7 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
 
     const handleDeleteClick = async () => {
         try {
-            if (window.confirm("정말로 삭제하시겠습니까?")) {
-                await instance.delete(`/api/calendar/schedule/${editData.scheduleId}`);
-            }
+            await instance.delete(`/api/calendar/schedule/${editData.scheduleId}`);
         } catch (error) {
             console.log(error);
         }
@@ -283,7 +275,7 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
 
     return (
         <>
-            <SModal centered title={isEditMode ? "일정 수정" : "일정 생성"} open={open} setOpen={setOpen} onOk={handleOk} onCancel={handleCancel} okText={isEditMode ? "수정" : "추가"} cancelText="취소">
+            <SModal centered title={isEditMode ? "일정 수정" : "일정 추가"} open={open} setOpen={setOpen} onOk={handleOk} onCancel={handleCancel} okText={isEditMode ? "수정" : "추가"} cancelText="취소">
                 <div css={SFlexBox}>
                     <STitleInput name="title" defaultValue={scheduleInput.title} ref={inputRef} onChange={handleInputChange} value={scheduleInput.title} placeholder={isEditMode ? scheduleInput.title : "제목을 입력해주세요.(필수)"} size="large" />
                     <SColorPicker defaultValue={scheduleInput.labelColor} panelRender={panelRender} value={scheduleInput.labelColor} open={colorPickerOpen} onOpenChange={setColorPickerOpen} />
@@ -341,7 +333,13 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
                 </div>
 
                 <SDescriptionInput name="description" onChange={handleInputChange} value={scheduleInput.description} placeholder="설명" size="large" />
-                {isEditMode && <button onClick={handleDeleteClick}>삭제</button>}
+                {isEditMode && (
+                    <div css={SDeleteBtn}>
+                        <SBtn type="primary" danger onClick={handleDeleteClick}>
+                            삭제
+                        </SBtn>
+                    </div>
+                )}
             </SModal>
         </>
     );

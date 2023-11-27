@@ -3,12 +3,12 @@ import React, { useEffect, useState } from "react";
 import dayjs from "dayjs";
 import { useQuery, useQueryClient } from "react-query";
 import { useRecoilState } from "recoil";
-import AddScheduleModal from "../../component/Calendar/Modal/AddModal/AddScheduleModal";
+import AddEditModal from "../../component/Calendar/Modal/AddEditModal/AddEditModal";
 import Badge from "../../component/Calendar/Modal/Badge/Badge";
-import MoreScheduleModal from "../../component/Calendar/Modal/MoreScheduleModal/MoreScheduleModal";
+import MoreModal from "../../component/Calendar/Modal/MoreModal/MoreModal";
 import StyledCalendar from "../../component/Calendar/Styled/StyledCalendar/StyledCalendar";
 import { instance } from "../../config";
-import { calendarRecoil } from "../../store/atoms/calendarAtoms";
+import { calendarRecoil, familyRecoil, scheduleRecoil } from "../../store/atoms/calendarAtoms";
 import convertTo24HourFormat from "../../utils/Calendar/convertTo24HourFormat";
 import getVisibleDates from "../../utils/Calendar/getVisibleDates";
 import preprocessData from "../../utils/Calendar/preprocessData";
@@ -20,11 +20,12 @@ function CalendarPage() {
     const [currentDate, setCurrentDate] = useState(dayjs());
 
     const [addModalOpen, setAddModalOpen] = useState(false);
-    const [familyList, setFamilyList] = useState([]);
+    // eslint-disable-next-line no-unused-vars
+    const [familyList, setFamilyList] = useRecoilState(familyRecoil);
 
     const [editModalOpen, setEditModalOpen] = useState(false);
     const [selectedDate, setSelectedDate] = useState(dayjs());
-    const [selectedSchedule, setSelectedSchedule] = useState({});
+    const [selectedSchedule, setSelectedSchedule] = useRecoilState(scheduleRecoil);
 
     const [moreModalOpen, setMoreModalOpen] = useState(false);
     const [selectedDateSchedule, setSelectedDateSchedule] = useState([]);
@@ -60,12 +61,13 @@ function CalendarPage() {
 
     const getFamilyList = async () => {
         const response = await instance.get("/api/chart/family", { params: { familyId: principal?.data.data.familyId } });
-        setFamilyList(response.data);
+        setFamilyList(response?.data);
     };
 
     useEffect(() => {
         getFamilyList();
     }, []);
+
     // eslint-disable-next-line no-unused-vars
     const getSchedule = useQuery(["getSchedule"], fetchData, {
         retryOnMount: true,
@@ -238,9 +240,9 @@ function CalendarPage() {
 
     return (
         <>
-            <AddScheduleModal open={addModalOpen} setOpen={setAddModalOpen} dateObj={selectedDate} familyList={familyList} />
-            <AddScheduleModal open={editModalOpen} setOpen={setEditModalOpen} familyList={familyList} editData={selectedSchedule} />
-            <MoreScheduleModal open={moreModalOpen} setOpen={setMoreModalOpen} dateObject={selectedDate} schedules={selectedDateSchedule} position={moreModalPosition} />
+            <AddEditModal open={addModalOpen} setOpen={setAddModalOpen} dateObj={selectedDate} />
+            <AddEditModal open={editModalOpen} setOpen={setEditModalOpen} editData={selectedSchedule} />
+            <MoreModal open={moreModalOpen} setOpen={setMoreModalOpen} dateObject={selectedDate} schedules={selectedDateSchedule} position={moreModalPosition} />
             <div css={SMainContainer}>
                 <StyledCalendar cellRender={cellRender} rowNumber={rowNumber} onPanelChange={onMonthChange} />
             </div>

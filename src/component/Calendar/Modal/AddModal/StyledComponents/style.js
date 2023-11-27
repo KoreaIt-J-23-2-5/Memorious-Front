@@ -1,4 +1,4 @@
-import { Checkbox, ColorPicker, DatePicker, Input, Modal, Radio, Select, TimePicker } from "antd";
+import { Button, Checkbox, ColorPicker, DatePicker, Input, Modal, Radio, Select, TimePicker } from "antd";
 import styled from "styled-components";
 
 export const SModal = styled(Modal)`
@@ -103,3 +103,5 @@ export const SDescriptionInput = styled(Input.TextArea)`
     font-size: 16px;
     font-weight: 600;
 `;
+
+export const SBtn = styled(Button)``;
