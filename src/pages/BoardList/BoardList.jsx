@@ -22,7 +22,6 @@ function BoardList() {
 
     const [categoryList, setCategoryList] = useState([]);
 
-    // 카테고리 리스트 가져오기
     useEffect(() => {
         instance.get("/api/board/categories").then(response => {
             setCategoryList(
@@ -76,7 +75,6 @@ function BoardList() {
         },
     );
 
-    // 검색창 내용 바뀔 때
     const handleSearchInputChange = e => {
         setSearchParams({
             ...searchParams,
@@ -84,7 +82,6 @@ function BoardList() {
         });
     };
 
-    // 선택 옵션(제목/작성자) 바뀔 때
     const handleSearchOptionSelect = value => {
         setSelectedOption(value);
         setSearchParams({
@@ -93,7 +90,6 @@ function BoardList() {
         });
     };
 
-    // 검색 버튼 클릭
     const handleSearchButtonClick = () => {
         navigate(`/board/${category}/1`);
         getBoardList.refetch();
@@ -105,12 +101,11 @@ function BoardList() {
         }
     };
 
-    /** antd table */
     const columns = [
         {
-            title: "번호", // 타이틀(보여짐)
-            dataIndex: "boardId", // 객체의 키값
-            key: "boardId", // 키
+            title: "번호",
+            dataIndex: "boardId",
+            key: "boardId",
             onHeaderCell: () => ({
                 style: {
                     background: "#6F6257",
@@ -177,7 +172,6 @@ function BoardList() {
         };
     };
 
-    // 링크로 이동시 해당 링크값 받아옴
     const location = useLocation();
     const currentPath = decodeURIComponent(location.pathname);
 

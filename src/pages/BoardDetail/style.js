@@ -104,6 +104,6 @@ export const contentWrapper = css`
     margin: 20px;
     font-size: 30px;
     img {
-        width: 40%;
+        width: 60%;
     }
 `;

@@ -15,11 +15,8 @@ function BoardWrite() {
         categoryId: null,
         categoryName: "",
     });
-    // 추가할 카테고리
     const [newCategory, setNewCategory] = useState("");
-    // 카테고리 옵션리스트
     const [options, setOptions] = useState([]);
-    // 선택된 옵션
     const [selectedOption, setSelectedOption] = useState(options[0]);
 
     const queryClient = useQueryClient();
@@ -30,7 +27,6 @@ function BoardWrite() {
         window.location.replace("/auth/oauth2/signin");
     }
 
-    // get categoryList -> options에 set
     useEffect(() => {
         instance.get("api/board/categories").then(response => {
             setOptions(
@@ -44,9 +40,8 @@ function BoardWrite() {
         });
     }, []);
 
-    // 카테고리 추가
     const handleAddCategory = () => {
-        const categoryName = window.prompt("새로 추가할 카테고리를 입력하세요."); // 모달창으로
+        const categoryName = window.prompt("새로 추가할 카테고리를 입력하세요.");
         if (!categoryName) {
             return;
         }
@@ -71,14 +66,12 @@ function BoardWrite() {
         }
     }, [newCategory]);
 
-    // quill
     const modules = {
         toolbar: {
             container: [[{ header: [1, 2, 3, false] }], ["bold", "underline"], ["image"]],
         },
     };
 
-    // 셀렉트 옵션을 클릭하면 selectedOption을 set 해줌
     const handleSelectChange = (value, option) => {
         setSelectedOption(option);
     };
@@ -105,7 +98,6 @@ function BoardWrite() {
         });
     };
 
-    // 게시글 작성 submit
     const handleWriteSubmit = async () => {
         if (boardData.categoryId === null) {
             alert("카테고리를 선택해주세요.");
