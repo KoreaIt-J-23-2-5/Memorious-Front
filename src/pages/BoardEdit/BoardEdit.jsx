@@ -18,7 +18,6 @@ function BoardEdit() {
         categoryName: "",
     });
 
-    // const [categories, setCategories] = useState([]);
     // 추가할 카테고리
     const [newCategory, setNewCategory] = useState("");
     // 카테고리 옵션리스트
@@ -35,24 +34,6 @@ function BoardEdit() {
             window.location.replace("/auth/oauth2/signin");
         }
     }, []);
-
-    // useEffect(() => {
-    //     try {
-    //         instance.get(`api/board/${boardId}`).then(response => {
-    //             setBoardData({
-    //                 ...boardData,
-    //                 title: response?.data?.boardTitle,
-    //                 content: response?.data?.boardContent,
-    //             });
-
-    //             const category = options.filter(option => option.value === response.data.boardCategoryId)[0];
-    //             setSelectedOption(category);
-    //         });
-    //     } catch (error) {
-    //         alert("해당 게시글을 불러올 수 없습니다.");
-    //         navigate("/board");
-    //     }
-    // }, []);
 
     const getBoardDetail = useQuery(
         ["getBoardDetail"],
