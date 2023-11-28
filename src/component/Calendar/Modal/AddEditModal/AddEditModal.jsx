@@ -7,7 +7,7 @@ import { useRecoilState } from "recoil";
 import { instance } from "../../../../config";
 import { LabelColorPreset } from "../../../../constants/Calendar/LabelColorPreset";
 import { RepeatCyclePreset } from "../../../../constants/Calendar/RepeatCyclePreset";
-import { calendarRecoil } from "../../../../store/atoms/calendarAtoms";
+import { calendarRecoil, familyRecoil } from "../../../../store/atoms/calendarAtoms";
 import preprocessData from "../../../../utils/Calendar/preprocessData";
 import sortCalendarData from "../../../../utils/Calendar/sortCalendarData";
 import LabelColorBadge from "./LabelColorBadge/LabelColorBadge";
@@ -15,20 +15,44 @@ import { SAttendeeSelect, SBtn, SCheckbox, SColorPicker, SCycleInput, SCycleSele
 import { SCycleBox, SDeleteBtn, SFlexBox, SPanelBox, SRepeatBox, SRepeatEnd, SRepeatTypeBox, STime } from "./style";
 /** @jsxImportSource @emotion/react */
 
-function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
+function AddEditModal({ open, setOpen, dateObj, editData }) {
     // 시간 선택시 UX를 위해 기본 시간을 중앙에 있는 값으로 변경
     const now = dayjs();
     const queryClient = useQueryClient();
     // 본인 정보를 가져옴
     const principal = queryClient.getQueryState(["getPrincipal"]);
+    // eslint-disable-next-line no-unused-vars
+    const [familyList, setFamilyList] = useRecoilState(familyRecoil);
     const [scheduleInput, setScheduleInput] = useState({});
     const [selectedDate, setSelectedDate] = useState(now);
+    const [attendeeValue, setAttendeeValue] = useState([]);
+    const [selectedRepeatLabel, setSelectedRepeatLabel] = useState(RepeatCyclePreset[0].value);
 
     const isEditMode = !!editData;
-
     useEffect(() => {
         if (editData) {
-            setScheduleInput({ ...editData, isAllDay: editData.isAllDay ? 1 : 0 });
+            const attendeesFormChange =
+                editData.attendees?.map(attendee => {
+                    return {
+                        value: attendee?.attendeeId,
+                        label: attendee?.attendeeNickName,
+                    };
+                }) || [];
+            setScheduleInput({
+                ...editData,
+                isAllDay: editData?.isAllDay ? 1 : 0,
+                attendee: [],
+            });
+
+            setAttendeeValue([...attendeesFormChange]);
+
+            const isCustomRepeatCycle = ["", "day", "week", "month", "year"].includes(editData.repeatCycle);
+            if (!isCustomRepeatCycle) {
+                setSelectedRepeatLabel(RepeatCyclePreset[5].value);
+                return;
+            }
+            setSelectedRepeatLabel(editData?.repeatCycle);
+            console.log(editData?.repeatCycle);
         }
     }, [editData]);
 
@@ -59,10 +83,8 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
     const defaultEndTime = now.set("hour", 13).set("m", 0).format("HH:mm");
     const formattedDate = selectedDate?.format("YYYY-MM-DD");
 
-    const [selectedRepeatLabel, setSelectedRepeatLabel] = useState(RepeatCyclePreset[0].label);
     const [colorPickerOpen, setColorPickerOpen] = useState(false);
     const [repeatEndDate, setRepeatEndDate] = useState(formattedDate);
-    const [attendeeValue, setAttendeeValue] = useState([]);
     // eslint-disable-next-line no-unused-vars
     const [scheduleData, setScheduleData] = useRecoilState(calendarRecoil);
     const inputRef = useRef(null);
@@ -103,6 +125,8 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
             console.log("error in fetch", error);
         }
         setOpen(false);
+
+        console.log("scheduleInput", scheduleInput);
     };
 
     const handleDeleteClick = async () => {
@@ -224,16 +248,16 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
     // 체크한 참석자들을 Input에 저장
     const handleChange = attendees => {
         // attendees : key(userId) / name(username)
-        const keys = attendees.map(attendee => attendee.key);
-        const options = attendees.map(attendee => ({
-            value: attendee.key,
-            label: attendee.label,
-        }));
-
-        setAttendeeValue(options);
+        const attendeeIds = attendees.map(attendee => attendee.value);
+        setAttendeeValue(
+            attendees.map(attendee => ({
+                value: attendee.value,
+                label: attendee.label,
+            })),
+        );
         setScheduleInput({
             ...scheduleInput,
-            attendee: keys,
+            attendee: attendeeIds,
         });
     };
 
@@ -258,7 +282,8 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
     // <=====    반복 Select변경시 Label과 value(period) 변경(RepeatCyclePreset)      =====>
     const handleCycleChange = menu => {
         // menu : value, label (cyclePreset 참고)
-        setSelectedRepeatLabel(menu.label);
+        console.log(menu);
+        setSelectedRepeatLabel(menu.value);
         setScheduleInput({
             ...scheduleInput,
             repeatCycle: menu.value,
@@ -293,25 +318,26 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
                         <STimePicker css={STime} onSelect={handleEndTimeChange} value={dayjs(scheduleInput.endTime, "HH:mm")} minuteStep="10" format="HH:mm" size="large" />
                     </div>
                 )}
-                <SAttendeeSelect labelInValue showSearch key={attendeeValue.key} value={attendeeValue.value} label={attendeeValue.label} mode="multiple" placeholder="참석자" filterOption={false} onChange={handleChange} size="large">
-                    {familyList.map(user => (
-                        <SSelectOption key={user.userId} value={user.nickname}>
-                            {user.nickname}
-                        </SSelectOption>
-                    ))}
+                <SAttendeeSelect labelInValue showSearch key={attendeeValue.key} value={attendeeValue} label={attendeeValue.label} mode="multiple" placeholder="참석자" filterOption={false} onChange={handleChange} size="large">
+                    {familyList &&
+                        familyList?.map(user => (
+                            <SSelectOption key={user.nickname} value={user.userId}>
+                                {user.nickname}
+                            </SSelectOption>
+                        ))}
                 </SAttendeeSelect>
                 <SLocationInput name="location" onChange={handleInputChange} value={scheduleInput.location} placeholder="위치" size="large" />
-                <SCycleSelect labelInValue onChange={handleCycleChange} defaultValue={{ label: RepeatCyclePreset[0].label, value: RepeatCyclePreset[0].value }} options={RepeatCyclePreset} size="large" />
+                <SCycleSelect labelInValue onChange={handleCycleChange} value={{ label: RepeatCyclePreset.find(item => item.value === selectedRepeatLabel)?.label, value: selectedRepeatLabel }} options={RepeatCyclePreset} size="large" />
 
                 <div css={SRepeatBox}>
-                    {selectedRepeatLabel === RepeatCyclePreset[5].label ? ( // 선택된 라벨이 "직접 입력" 일 때
+                    {selectedRepeatLabel === RepeatCyclePreset[5].value ? ( // 선택된 라벨이 "직접 입력" 일 때
                         <div css={SCycleBox}>
                             <span>반복 주기</span>
                             <SCycleInput name="CycleInput" onChange={handleCycleInputChange} value={scheduleInput.repeatCycle} defaultValue="0" size="small" />
                             <span>일</span>
                         </div>
                     ) : null}
-                    {selectedRepeatLabel === RepeatCyclePreset[0].label ? null : ( // '반복안함'이 아닐 경우
+                    {selectedRepeatLabel === RepeatCyclePreset[0].value ? null : ( // '반복안함'이 아닐 경우
                         <div>
                             <div css={SRepeatEnd}>종료</div>
                             <SRadioGroup onChange={handleRepeatTypeChange} value={scheduleInput.repeatType}>
@@ -345,4 +371,4 @@ function AddScheduleModal({ open, setOpen, dateObj, familyList, editData }) {
     );
 }
 
-export default AddScheduleModal;
+export default AddEditModal;
