@@ -107,10 +107,13 @@ function BoardWrite() {
 
     // 게시글 작성 submit
     const handleWriteSubmit = async () => {
+        if (boardData.categoryId === null) {
+            alert("카테고리를 선택해주세요.");
+            return;
+        }
         if (!window.confirm("게시글을 작성하시겠습니까?")) {
             return;
         }
-
         try {
             await instance.post("api/board/content", boardData);
             alert("게시글 작성이 완료되었습니다.");
@@ -120,7 +123,7 @@ function BoardWrite() {
             console.log(error.response.data);
         }
     };
-
+    console.log(boardData);
     return (
         <>
             <div css={S.layout}>

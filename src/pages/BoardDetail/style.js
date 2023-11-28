@@ -97,21 +97,13 @@ export const boardDetailContainer = css`
 `;
 export const contentWrapper = css`
     width: calc(100% - 100px);
-    height: 100%;
+    max-height: 500px;
     padding: 40px;
     border-radius: 6px;
     border: 1px solid #6f6357;
     margin: 20px;
     font-size: 30px;
-    pre {
-        h1 {
-            line-height: 2rem;
-            font-size: 2rem;
-        }
-        p {
-            line-height: 15rem;
-            font-size: 16px;
-            width: 100%;
-        }
+    img {
+        width: 40%;
     }
 `;

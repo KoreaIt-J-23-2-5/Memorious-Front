@@ -31,8 +31,6 @@ function BoardDetail() {
         },
     );
 
-    // 게시글 수정
-
     // 게시글 삭제
     const handleBoardDeleteClick = async () => {
         if (!window.confirm("정말로 게시글을 삭제하시겠습니까?")) {

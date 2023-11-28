@@ -1,7 +1,7 @@
 /* eslint-disable no-unused-vars */
 import React, { useEffect, useMemo, useState } from "react";
 import { Reset } from "styled-reset";
-import { Link, useNavigate, useParams } from "react-router-dom";
+import { Link, NavLink, useLocation, useNavigate, useParams } from "react-router-dom";
 import { useQuery, useQueryClient } from "react-query";
 /** @jsxImportSource @emotion/react */
 import { HiSearch } from "react-icons/hi";
@@ -27,7 +27,10 @@ function BoardList() {
         instance.get("/api/board/categories").then(response => {
             setCategoryList(
                 response.data.map(categoryData => {
-                    return { id: categoryData.boardCategoryId, value: categoryData.boardCategoryName };
+                    return {
+                        id: categoryData.boardCategoryId,
+                        value: categoryData.boardCategoryName,
+                    };
                 }),
             );
         });
@@ -68,6 +71,7 @@ function BoardList() {
             }
         },
         {
+            retry: 0,
             refetchOnWindowFocus: false,
         },
     );
@@ -163,7 +167,7 @@ function BoardList() {
 
     const customPagination = {
         defaultCurrent: 1,
-        defaultPageSize: 7, // 10으로 만들고 행의 height 줄이기
+        defaultPageSize: 7,
     };
     const onRow = (record, index) => {
         return {
@@ -172,6 +176,10 @@ function BoardList() {
             },
         };
     };
+
+    // 링크로 이동시 해당 링크값 받아옴
+    const location = useLocation();
+    const currentPath = decodeURIComponent(location.pathname);
 
     return (
         <>
@@ -196,16 +204,18 @@ function BoardList() {
                     </div>
                 </div>
                 <div css={S.categoryBox}>
-                    <Link key={0} to="/board/all/1" css={S.category}>
+                    <Link key={0} to="/board/all/1" css={currentPath === "/board/all/1" ? S.categoryClick : S.category}>
                         <div>전체</div>
                     </Link>
 
                     {/* 카테고리 목록 가져오기 */}
                     {categoryList.map(categoryData => {
                         return (
-                            <Link key={categoryData.id} to={`/board/${categoryData.value}/1`} css={S.category}>
-                                <div>{`${categoryData.value}`}</div>
-                            </Link>
+                            <>
+                                <Link key={categoryData.id} to={`/board/${categoryData.value}/1`} css={currentPath === `/board/${categoryData.value}/1` ? S.categoryClick : S.category}>
+                                    <div>{categoryData.value}</div>
+                                </Link>
+                            </>
                         );
                     })}
                 </div>

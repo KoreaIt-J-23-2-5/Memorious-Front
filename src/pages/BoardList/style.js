@@ -74,7 +74,6 @@ export const categoryBox = css`
         margin-left: 10px;
     }
 `;
-
 export const category = css`
     padding: 8px 12px;
     border-radius: 20px;
@@ -82,6 +81,26 @@ export const category = css`
     background-color: #fffbf5;
     text-decoration: none;
     cursor: pointer;
+    transition: all 0.2s;
+    &:hover {
+        background-color: #666666;
+    }
+    &:hover div {
+        color: #fffbf5;
+    }
+`;
+
+export const categoryClick = css`
+    transition: all 0.2s;
+    padding: 8px 12px;
+    border-radius: 20px;
+    font-size: 15px;
+    background-color: #6f6257;
+    text-decoration: none;
+    cursor: pointer;
+    & div {
+        color: #fffbf5;
+    }
 `;
 
 export const table = css`
