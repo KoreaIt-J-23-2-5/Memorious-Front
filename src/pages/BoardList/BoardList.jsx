@@ -70,7 +70,6 @@ function BoardList() {
             }
         },
         {
-            retry: 0,
             refetchOnWindowFocus: false,
         },
     );
