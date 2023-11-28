@@ -51,6 +51,7 @@ function MoreModal({ open, setOpen, dateObject, schedules, position }) {
             </>
         );
     };
+
     return (
         <div>
             <SModal title={title} open={open} onOk={handleOk} onCancel={handleCancel} footer={null} width={300} style={{ top: position.top - 260, left: position.left - 900 }}>

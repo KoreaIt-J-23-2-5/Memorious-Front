@@ -1,13 +1,15 @@
 // eslint-disable-next-line import/no-extraneous-dependencies
 import dayjs from "dayjs";
+import { QuestionCircleOutlined } from "@ant-design/icons";
 import React, { useEffect, useRef, useState } from "react";
 import { IoIosArrowRoundForward, IoMdArrowForward } from "react-icons/io";
 import { useQueryClient } from "react-query";
 import { useRecoilState } from "recoil";
+import { message, Popconfirm } from "antd";
 import { instance } from "../../../../config";
 import { LabelColorPreset } from "../../../../constants/Calendar/LabelColorPreset";
 import { RepeatCyclePreset } from "../../../../constants/Calendar/RepeatCyclePreset";
-import { calendarRecoil, familyRecoil } from "../../../../store/atoms/calendarAtoms";
+import { calendarRecoil, familyRecoil, moreModalOpenRecoil } from "../../../../store/atoms/calendarAtoms";
 import preprocessData from "../../../../utils/Calendar/preprocessData";
 import sortCalendarData from "../../../../utils/Calendar/sortCalendarData";
 import LabelColorBadge from "./LabelColorBadge/LabelColorBadge";
@@ -23,12 +25,34 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
     const principal = queryClient.getQueryState(["getPrincipal"]);
     // eslint-disable-next-line no-unused-vars
     const [familyList, setFamilyList] = useRecoilState(familyRecoil);
+    // eslint-disable-next-line no-unused-vars
+    const [moreModalOpen, setMoreModalOpen] = useRecoilState(moreModalOpenRecoil);
     const [scheduleInput, setScheduleInput] = useState({});
-    const [selectedDate, setSelectedDate] = useState(now);
+    const [selectedDate, setSelectedDate] = useState(dateObj);
     const [attendeeValue, setAttendeeValue] = useState([]);
     const [selectedRepeatLabel, setSelectedRepeatLabel] = useState(RepeatCyclePreset[0].value);
+    const formattedDate = selectedDate?.format("YYYY-MM-DD");
+    const [repeatEndDate, setRepeatEndDate] = useState(formattedDate);
 
     const isEditMode = !!editData;
+    const defaultScheduleInput = {
+        title: "",
+        labelColor: "#8977f4",
+        startDate: dateObj?.format("YYYY-MM-DD"),
+        endDate: dateObj?.format("YYYY-MM-DD"),
+        isAllDay: 1,
+        startTime: "",
+        endTime: "",
+        attendee: [], // id만 넘겨줌
+        location: "",
+        repeatType: "none",
+        repeatCycle: "",
+        repeatEndDate: "0000:00:00",
+        repeatCount: "",
+        description: "",
+        userId: principal?.data.data.userId,
+    };
+
     useEffect(() => {
         if (editData) {
             const attendeesFormChange =
@@ -52,42 +76,30 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
                 return;
             }
             setSelectedRepeatLabel(editData?.repeatCycle);
-            console.log(editData?.repeatCycle);
         }
     }, [editData]);
 
     useEffect(() => {
         if (dateObj) {
             setSelectedDate(dateObj);
-            setScheduleInput({
-                title: "",
-                labelColor: "#8977f4",
-                startDate: dateObj?.format("YYYY-MM-DD"),
-                endDate: dateObj?.format("YYYY-MM-DD"),
-                isAllDay: 1,
-                startTime: "",
-                endTime: "",
-                attendee: [], // id만 넘겨줌
-                location: "",
-                repeatType: "none",
-                repeatCycle: RepeatCyclePreset[0].value,
-                repeatEndDate: "0000:00:00",
-                repeatCount: "",
-                description: "",
-                userId: principal?.data.data.userId,
-            });
+            setScheduleInput(defaultScheduleInput);
+            setSelectedRepeatLabel(RepeatCyclePreset[0].value);
         }
     }, [dateObj]);
 
+    useEffect(() => {
+        if (selectedDate) {
+            setRepeatEndDate(selectedDate);
+        }
+    }, [selectedDate]);
     const defaultStTime = now.set("hour", 12).set("m", 0).format("HH:mm");
     const defaultEndTime = now.set("hour", 13).set("m", 0).format("HH:mm");
-    const formattedDate = selectedDate?.format("YYYY-MM-DD");
 
     const [colorPickerOpen, setColorPickerOpen] = useState(false);
-    const [repeatEndDate, setRepeatEndDate] = useState(formattedDate);
     // eslint-disable-next-line no-unused-vars
     const [scheduleData, setScheduleData] = useRecoilState(calendarRecoil);
     const inputRef = useRef(null);
+    const [messageApi, contextHolder] = message.useMessage();
 
     const fetchData = async () => {
         try {
@@ -99,39 +111,56 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
             console.log(error);
         }
     };
+
+    const warningMessage = context => {
+        messageApi.open({
+            type: "warning",
+            content: context,
+            style: {
+                marginTop: "60px",
+            },
+        });
+    };
+
+    const successMessage = context => {
+        messageApi.open({
+            type: "success",
+            content: context,
+            duration: 2,
+        });
+    };
+
     // 확인버튼 클릭시
     const handleOk = async () => {
         if (scheduleInput.title === "") {
-            alert("제목을 입력해주세요");
+            warningMessage("제목을 입력해주세요");
             return;
         }
         if (scheduleInput.title.length > 30) {
-            alert("30자 이하로 입력 해 주세요.");
+            warningMessage("30자 이하로 입력 해 주세요.");
             return;
         }
-        setOpen(false);
         try {
             if (isEditMode) {
                 await instance.put(`/api/calendar/schedule/${editData.scheduleId}`, scheduleInput);
             } else {
                 await instance.post("/api/calendar/schedule", scheduleInput);
             }
+            fetchData();
         } catch (error) {
             console.log("error in post or put", error);
         }
-        try {
-            fetchData();
-        } catch (error) {
-            console.log("error in fetch", error);
-        }
+        setSelectedRepeatLabel(defaultScheduleInput.repeatCycle);
+        setAttendeeValue([]);
+        setMoreModalOpen(false);
         setOpen(false);
-
-        console.log("scheduleInput", scheduleInput);
+        successMessage(`일정이 ${isEditMode ? "수정" : "추가"}되었습니다`);
     };
 
     const handleDeleteClick = async () => {
         try {
             await instance.delete(`/api/calendar/schedule/${editData.scheduleId}`);
+            successMessage("일정이 삭제 되었습니다");
         } catch (error) {
             console.log(error);
         }
@@ -140,6 +169,7 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
         } catch (error) {
             console.log("error in fetch", error);
         }
+        setMoreModalOpen(false);
         setOpen(false);
     };
 
@@ -282,7 +312,6 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
     // <=====    반복 Select변경시 Label과 value(period) 변경(RepeatCyclePreset)      =====>
     const handleCycleChange = menu => {
         // menu : value, label (cyclePreset 참고)
-        console.log(menu);
         setSelectedRepeatLabel(menu.value);
         setScheduleInput({
             ...scheduleInput,
@@ -300,9 +329,10 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
 
     return (
         <>
+            {contextHolder}
             <SModal centered title={isEditMode ? "일정 수정" : "일정 추가"} open={open} setOpen={setOpen} onOk={handleOk} onCancel={handleCancel} okText={isEditMode ? "수정" : "추가"} cancelText="취소">
                 <div css={SFlexBox}>
-                    <STitleInput name="title" defaultValue={scheduleInput.title} ref={inputRef} onChange={handleInputChange} value={scheduleInput.title} placeholder={isEditMode ? scheduleInput.title : "제목을 입력해주세요.(필수)"} size="large" />
+                    <STitleInput name="title" ref={inputRef} onChange={handleInputChange} value={scheduleInput.title} placeholder={isEditMode ? editData.title : "제목을 입력해주세요.(필수)"} size="large" />
                     <SColorPicker defaultValue={scheduleInput.labelColor} panelRender={panelRender} value={scheduleInput.labelColor} open={colorPickerOpen} onOpenChange={setColorPickerOpen} />
                 </div>
 
@@ -360,11 +390,25 @@ function AddEditModal({ open, setOpen, dateObj, editData }) {
 
                 <SDescriptionInput name="description" onChange={handleInputChange} value={scheduleInput.description} placeholder="설명" size="large" />
                 {isEditMode && (
-                    <div css={SDeleteBtn}>
-                        <SBtn type="primary" danger onClick={handleDeleteClick}>
-                            삭제
-                        </SBtn>
-                    </div>
+                    <Popconfirm
+                        title="일정 삭제"
+                        description="정말로 삭제하시겠습니까?"
+                        placement="left"
+                        icon={
+                            <QuestionCircleOutlined
+                                style={{
+                                    color: "red",
+                                }}
+                            />
+                        }
+                        onConfirm={handleDeleteClick}
+                    >
+                        <div css={SDeleteBtn}>
+                            <SBtn type="primary" danger>
+                                삭제
+                            </SBtn>
+                        </div>
+                    </Popconfirm>
                 )}
             </SModal>
         </>

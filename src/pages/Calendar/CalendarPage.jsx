@@ -8,7 +8,7 @@ import Badge from "../../component/Calendar/Modal/Badge/Badge";
 import MoreModal from "../../component/Calendar/Modal/MoreModal/MoreModal";
 import StyledCalendar from "../../component/Calendar/Styled/StyledCalendar/StyledCalendar";
 import { instance } from "../../config";
-import { calendarRecoil, familyRecoil, scheduleRecoil } from "../../store/atoms/calendarAtoms";
+import { calendarRecoil, familyRecoil, moreModalOpenRecoil, scheduleRecoil } from "../../store/atoms/calendarAtoms";
 import convertTo24HourFormat from "../../utils/Calendar/convertTo24HourFormat";
 import getVisibleDates from "../../utils/Calendar/getVisibleDates";
 import preprocessData from "../../utils/Calendar/preprocessData";
@@ -27,7 +27,7 @@ function CalendarPage() {
     const [selectedDate, setSelectedDate] = useState(dayjs());
     const [selectedSchedule, setSelectedSchedule] = useRecoilState(scheduleRecoil);
 
-    const [moreModalOpen, setMoreModalOpen] = useState(false);
+    const [moreModalOpen, setMoreModalOpen] = useRecoilState(moreModalOpenRecoil);
     const [selectedDateSchedule, setSelectedDateSchedule] = useState([]);
     const [moreModalPosition, setMoreModalPosition] = useState({});
 

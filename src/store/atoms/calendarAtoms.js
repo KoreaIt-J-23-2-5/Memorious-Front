@@ -14,3 +14,8 @@ export const familyRecoil = atom({
     key: "family",
     default: [],
 });
+
+export const moreModalOpenRecoil = atom({
+    key: "moreModalOpen",
+    default: false,
+});

@@ -6,7 +6,6 @@ function SettingRoute() {
     return (
         <Routes>
             <Route path="myfamily" element={<MyFamily />} />
-            {/* <Route path="mypage" element={<Mypage />} /> */}
         </Routes>
     );
 }
