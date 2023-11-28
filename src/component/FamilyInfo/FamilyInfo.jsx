@@ -1,5 +1,4 @@
 import React from "react";
-import defaultProfileImg from "../../assets/NicePng_watsapp-icon-png_9332131.png";
 import { familyImgBox, familyListText, familyText, goOutButton, ownerText, userBox, userContainer, userHeaderbox, userImgBox, userListContainer } from "./style";
 /** @jsxImportSource @emotion/react */
 
@@ -8,7 +7,7 @@ function FamilyInfo({ isButton, value, owner }) {
         <div css={isButton ? userListContainer : userContainer}>
             <div css={isButton ? userBox : userHeaderbox}>
                 <div css={isButton ? familyImgBox : userImgBox}>
-                    <img src={defaultProfileImg} alt="defaultUser" />
+                    <img src="" alt="defaultUser" />
                 </div>
                 <div css={isButton ? familyListText : familyText}>
                     <p>{value}</p>

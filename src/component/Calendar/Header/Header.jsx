@@ -1,8 +1,8 @@
 import React, { useState } from "react";
 import dayjs from "dayjs";
 import { Button, Col, Select } from "antd";
-import AddScheduleModal from "../Modal/AddModal/AddScheduleModal";
 import { SAddBtn, SFlex, SHeaderContainer, SMonthbtn, STodayBtn, SheaderDisplay } from "./style";
+import AddEditModal from "../Modal/AddEditModal/AddEditModal";
 /** @jsxImportSource @emotion/react */
 
 function Header({ value, onChange }) {
@@ -27,7 +27,7 @@ function Header({ value, onChange }) {
 
     return (
         <>
-            {addModalOpen ? <AddScheduleModal open={addModalOpen} setOpen={setAddModalOpen} date={now} /> : <></>}
+            {addModalOpen ? <AddEditModal open={addModalOpen} setOpen={setAddModalOpen} dateObj={now} /> : <></>}
             <div css={SHeaderContainer}>
                 <div css={SFlex}>
                     <Button css={STodayBtn} onClick={() => onChange(now)}>
