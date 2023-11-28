@@ -52,6 +52,7 @@ function SideBar() {
 
                 return await instance.get("/api/account/principal", option);
             } catch (err) {
+                alert("로그인 후 이용 바랍니다.");
                 window.location.replace("/auth/oauth2/signin");
                 throw new Error(err);
             }

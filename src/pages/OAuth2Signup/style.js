@@ -25,8 +25,8 @@ export const signupContainer = css`
     justify-content: center;
     align-items: center;
     border-radius: 10px;
+    padding: 20px;
     width: 370px;
-    height: 200px;
     background-color: #fffbf5;
 `;
 
