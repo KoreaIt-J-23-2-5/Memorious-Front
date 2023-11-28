@@ -53,7 +53,7 @@ function SidebarContainer({ principal }) {
 
         reader.readAsDataURL(files[0]);
 
-        const storageRef = ref(storage, `files/profile/${files[0].name}`);
+        const storageRef = ref(storage, `files/profile/user_profile/${files[0].name}`);
         const uploadTask = uploadBytesResumable(storageRef, files[0]);
 
         uploadTask.on(

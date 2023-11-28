@@ -109,13 +109,6 @@ function CreateFamily() {
                     <InviteConfirmModal open={isInvited} setOpen={setIsInvited} />
                 </div>
             </div>
-            <h3>우리 가족을 위한 기억 공간을 생성하세요</h3>
-            <div>
-                <span>가족 이름: </span> <input onChange={handleInputChange} name="familyName" type="text" />
-            </div>
-            <p>가족으로부터 초대받으셨나요? 초대받은 이메일을 확인해주세요</p>
-            <button onClick={createFamilySubmit}>가입하기</button>
-            <InviteConfirmModal open={isInvited} setOpen={setIsInvited} />
         </>
     );
 }

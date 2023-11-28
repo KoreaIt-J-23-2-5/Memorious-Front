@@ -14,8 +14,6 @@ function BoardList() {
     const navigate = useNavigate();
     const { category, page } = useParams();
 
-    /* option: antd Select 이용 */
-    // 검색 필터링
     const options = [
         { value: "전체", label: "전체" },
         { value: "제목", label: "제목" },
@@ -24,7 +22,7 @@ function BoardList() {
 
     const [categoryList, setCategoryList] = useState([]);
 
-    // 카테고리 리스트 뽑아오기
+    // 카테고리 리스트 가져오기
     useEffect(() => {
         instance.get("/api/board/categories").then(response => {
             setCategoryList(
@@ -52,6 +50,7 @@ function BoardList() {
     }
 
     const [boardList, setBoardList] = useState([]);
+
     const getBoardList = useQuery(
         ["getBoardList", category, page],
         async () => {
@@ -93,8 +92,6 @@ function BoardList() {
     // 검색 버튼 클릭
     const handleSearchButtonClick = () => {
         navigate(`/board/${category}/1`);
-        // navigate(라우팅)만 한다 해서 state들은 날라가지 않고 유지됨-> 재렌더링이 필요함 = refetch
-        // 주소창에서 엔터 치는 것(상태가 모두 초기화됨)과 렌더링은 다르다
         getBoardList.refetch();
     };
 
@@ -130,7 +127,7 @@ function BoardList() {
                     color: "#fffbf5",
                     textAlign: "center",
                     fontSize: "16px",
-                    width: "60%",
+                    width: "50%",
                 },
             }),
         },
@@ -144,7 +141,7 @@ function BoardList() {
                     color: "#fffbf5",
                     textAlign: "center",
                     fontSize: "16px",
-                    width: "10%",
+                    width: "20%",
                 },
             }),
         },
@@ -158,7 +155,7 @@ function BoardList() {
                     color: "#fffbf5",
                     textAlign: "center",
                     fontSize: "16px",
-                    width: "20%",
+                    width: "15%",
                 },
             }),
         },
@@ -166,13 +163,11 @@ function BoardList() {
 
     const customPagination = {
         defaultCurrent: 1,
-        // pageSize: 5,
         defaultPageSize: 7, // 10으로 만들고 행의 height 줄이기
     };
     const onRow = (record, index) => {
         return {
             onClick: e => {
-                // console.log("record and index >> ", record, index);
                 navigate(`/board/${record.boardId}`);
             },
         };

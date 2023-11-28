@@ -2,10 +2,12 @@
 import { css } from "@emotion/react";
 import React from "react";
 import { useQuery } from "react-query";
-import { Outlet } from "react-router-dom";
+import { Outlet, useNavigate } from "react-router-dom";
 import { Reset } from "styled-reset";
 import SidebarContainer from "../../component/Sidebar";
 import { instance } from "../../config";
+import CreateFamily from "../CreateFamily/CreateFamily";
+// import { namespace } from "d3";
 /** @jsxImportSource @emotion/react */
 
 export const mainContainer = css`
@@ -40,6 +42,7 @@ const contentsContainer = css`
 `;
 
 function SideBar() {
+    const navigate = useNavigate();
     const getPrincipal = useQuery(
         ["getPrincipal"],
         async () => {
@@ -64,15 +67,23 @@ function SideBar() {
         },
     );
 
-    return getPrincipal.isSuccess ? (
-        <>
-            <Reset />
-            <div id="parent-container" css={mainContainer}>
-                <SidebarContainer principal={!getPrincipal.isLoading && getPrincipal.data.data} />
-                <div css={contentsContainer}>{!getPrincipal.isLoading && <Outlet />}</div>
-            </div>
-        </>
-    ) : null;
+    const familyId = getPrincipal?.data?.data.familyId;
+
+    if (!getPrincipal.isSuccess) {
+        navigate("/auth/oauth2/signin");
+    } else if (familyId === 0) {
+        navigate("/create/family");
+    } else {
+        return (
+            <>
+                <Reset />
+                <div id="parent-container" css={mainContainer}>
+                    <SidebarContainer principal={!getPrincipal.isLoading && getPrincipal.data.data} />
+                    <div css={contentsContainer}>{!getPrincipal.isLoading && <Outlet />}</div>
+                </div>
+            </>
+        );
+    }
 }
 
 export default SideBar;

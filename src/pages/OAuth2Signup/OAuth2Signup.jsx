@@ -8,7 +8,6 @@ import { instance } from "../../config";
 
 function OAuth2Signup() {
     const [searchParams, setSearchParams] = useSearchParams();
-    // const navigate = useNavigate();
 
     const user = {
         email: "",
