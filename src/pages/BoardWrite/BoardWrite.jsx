@@ -6,6 +6,10 @@ import { Select } from "antd";
 import * as S from "./style";
 import { instance } from "../../config";
 /** @jsxImportSource @emotion/react */
+import ReactSelect from "react-select";
+import { useNavigate } from "react-router-dom";
+import { Select } from "antd";
+import useMessage from "antd/es/message/useMessage";
 
 function BoardWrite() {
     const navigate = useNavigate();

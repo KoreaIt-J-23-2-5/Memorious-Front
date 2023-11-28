@@ -8,6 +8,7 @@ function SettingRoute() {
         <Routes>
             <Route path="myfamily" element={<MyFamily />} />
             <Route path="mypage" element={<Mypage />} />
+            <Route path="myfamily" element={<></>} />
         </Routes>
     );
 }
