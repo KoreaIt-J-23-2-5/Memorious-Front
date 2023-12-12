@@ -1,70 +1,33 @@
-# Getting Started with Create React App
+[Memorious 바로가기](https://naver.com/)
+# Memorious - 우리 가족만을 위한 플랫폼
+<span style="font-size: 24px;">본 프로젝트는 코리아IT아카데미(부산)의 'AWS 기반 공공ㆍ빅데이터 활용 웹서비스 개발자 양성과정(2회차)'에서 진행한 **최종 프로젝트**입니다. </span>
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+  
+## 목차
+- [프로젝트 소개](프로젝트-소개)
+- [팀 소개](팀-소개)
+- [개발환경](개발-환경)
+- [협업 방식](협업-방식)
+- [컨벤션](컨벤션)
+- [주요기능 설명](주요-기능-설명)
+- [각종 문서](문서)
+- [화면 구현 및 코드리뷰](화면-구현-및-코드리뷰)
+- [문제 해결](문제-해결)
+- [회고](느낀-점)
 
-## Available Scripts
+  
+## 프로젝트 소개
+#### 프로젝트 개요
+- Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음에 직접 개발하게 된, 온 가족이 함께 사용할 수 있는 플랫폼입니다.
+- 카카오/네이버 소셜 로그인을 통한 회원가입 및 로그인할 수 있습니다.
+- 로그인 후 가족을 생성하고 이메일을 통해 가족을 초대할 수 있습니다.
+- 캘린더, 메모, 게시판, 건강차트 기능을 지원하며 생성한 내용은 같은 가족끼리 공유됩니다. //주요기능 설명에 링크필
+#### 개발 기간
+  - 2023.11.03 ~ 2023.11.29 (27일)
+    
+#### [요구사항 명세서 바로가기](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
-In the project directory, you can run:
 
-### `npm start`
+##개발 환경
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
-
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
-
-### `npm test`
-
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
-
-### `npm run build`
-
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
-
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
-
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
-
-### `npm run eject`
-
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
-
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
-
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
-
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
-
-### Code Splitting
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
-
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+  
