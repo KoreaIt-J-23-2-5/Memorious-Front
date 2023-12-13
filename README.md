@@ -49,17 +49,24 @@
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white">
     <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white">
 </p>
+<p>
+  <img src="https://img.shields.io/badge/NPM-842d2a?logo=npm&logoColor=white">
+  <img src="https://img.shields.io/badge/AntDesign-0170FE?style=flat&logo=antdesign&logoColor=white">
+  <img src="https://img.shields.io/badge/Eslint-38297c?logo=eslint&logoColor=white">
+  <img src="https://img.shields.io/badge/Prettier-8c6414?logo=prettier&logoColor=white">
+  <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=white">
+</p>
 
 ### Back-End
 <p>
   <img src="https://img.shields.io/badge/Java-007396?logo=OpenJDK&logoColor=white">
-  <img src="https://img.shields.io/badge/springboot-6DB33F?logo=springboot&logoColor=white">
+  <img src="https://img.shields.io/badge/Spring_Boot-6DB33F?logo=springboot&logoColor=white">
   <img src="https://img.shields.io/badge/MySQL-4479A1?logo=mysql&logoColor=white">
   <img src="https://img.shields.io/badge/Amazon_RDS-527FFF?logo=amazonrds&logoColor=white">
   <img src="https://img.shields.io/badge/IntelliJ-000000?logo=intellijidea&logoColor=white">
 </p>
 
-### DeployMent
+### Deployment
 <p>
   <img src="https://img.shields.io/badge/Docker-1b5e90?logo=docker&logoColor=white">
   <img src="https://img.shields.io/badge/Amazon_S3-446a29?logo=amazons3&logoColor=white">
@@ -74,11 +81,8 @@
   <img src="https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white">
   <img src="https://img.shields.io/badge/Slack-341533?logo=slack&logoColor=white">
 </p>
-<p>
-  <img src="https://img.shields.io/badge/NPM-842d2a?logo=npm&logoColor=white">
-  <img src="https://img.shields.io/badge/AntD-0170FE?style=flat&logo=antdesign&logoColor=white">
-  <img src="https://img.shields.io/badge/Eslint-38297c?logo=eslint&logoColor=white">
-  <img src="https://img.shields.io/badge/Prettier-8c6414?logo=prettier&logoColor=white">
-  <img src="https://img.shields.io/badge/Firebase-FFCA28?logo=firebase&logoColor=white">
-</p>
-  
+
+## 주요 기능 설명
+
+## ERD 명세서
+
