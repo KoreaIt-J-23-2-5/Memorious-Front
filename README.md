@@ -5,7 +5,9 @@
 # Memorious - 우리 가족만을 위한 플랫폼
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/0b8a28b9-7d2f-4732-90d8-ebcd9e0de5da" width="40%">
 
-  #### 코리아IT아카데미(부산) 'AWS 기반 공공ㆍ빅데이터 활용 웹서비스 개발자 양성과정(2회차) 최종 프로젝트 : 4조
+  #### 코리아IT아카데미(부산) 
+  #### 'AWS 기반 공공ㆍ빅데이터 활용 웹서비스 개발자 양성과정(2회차)'
+  #### 최종 프로젝트 : 4조
 </div>
 
 
@@ -85,4 +87,6 @@
 ## 주요 기능 설명
 
 ## ERD 명세서
+  <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/1c987947-9b74-4f37-b50b-ba5da37b2444">
+
 
