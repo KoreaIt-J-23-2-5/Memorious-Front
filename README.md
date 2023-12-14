@@ -85,8 +85,80 @@
 </p>
 
 ## 주요 기능 설명
+- 
+
+
 
 ## ERD 명세서
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/1c987947-9b74-4f37-b50b-ba5da37b2444">
 
+## 기능 설명 및 코드리뷰
+### 회원가입 및 로그인
+<div>
+  <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/a1d7d556-e790-4439-954e-64ff997bcc59" width=60%>
+</div>
+- 네이버, 카카오를 통한 회원가입을 지원합니다 ... 
+<details>
+  <summary>Code</summary> 
+  
+  ```java
+  public class BootSpringBootApplication {
+    public static void main(String[] args) {
+      System.out.println("Hello, Honeymon");
+    }
+  }
+  ```
+  
+  {코드 설명...}
+</details>
+
+
+### 가족 초대
+- 가족의 이메일을 입력해 가족을 초대할 수 있으며 초대 메일이 전송됩니다.
+- 초대를 받은 회원은 입력한 이메일을 입력해 로그인 시 초대가 완료됩니다.
+
+### 캘린더
+- 한 달 단위로 가족이 추가한 일정을 조회할 수 있으며 각각의 일정은 정해진 우선순위에 따라 배치됩니다.(구글캘린더와 동일)
+- '오늘' '다음 월' '이전 월' 버튼과 연도 dropdown을 통해 원하는 월로 간편하게 이동할 수 있습니다.
+-  일정이 많아 모든 일정을 보여주지 못할 경우, 'n개 더보기'를 클릭해 모달창에서 모든 일정을 확인 할 수 있습니다.
+- '일정 추가' 버튼 또는 일정 셀을 클릭해 일정을 추가할 수 있습니다.
+- 반복 주기(5가지)와 종료일 또는 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
+- 조회된 일정을 클릭하면 나오는 모달창을 통해 세부 내용을 조회하고, 수정 또는 삭제할 수 있습니다.
+  
+<details>
+  <summary>Code Review</summary> 
+  
+  ```javascript
+    const fetchData = async () => {
+        try {
+            const response = await instance.get(`/api/calendar/schedule/${dayjs(scheduleInput.startDate).format("YYYY-MM")}`);
+            const processedData = response.data.sort(sortCalendarData).map(preprocessData).flat();
+            setScheduleData(processedData);
+        } catch (error) {
+            console.log(error);
+        }
+    };
+  ```
+  
+  {코드 설명...}
+</details>
+
+### 메모
+- 포스트잇과 비슷한 모양의 메모를 추가하고 최신일정순으로 조회할 수 있습니다.
+- 본인이 작성한 메모만 수정,삭제 할 수 있습니다.
+- 내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로 조회할 수 있습니다.
+- 무한 스크롤을 지원합니다.
+
+  
+### 게시판
+- 
+- 
+### 건강 차트
+- 
+- 
+### 가족페이지
+- 
+- 
+
+## 느낀 점
 
