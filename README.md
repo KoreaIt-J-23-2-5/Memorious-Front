@@ -84,11 +84,6 @@
   <img src="https://img.shields.io/badge/Slack-341533?logo=slack&logoColor=white">
 </p>
 
-## 주요 기능 설명
-- 
-
-
-
 ## ERD 명세서
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/1c987947-9b74-4f37-b50b-ba5da37b2444">
 
@@ -98,6 +93,7 @@
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/a1d7d556-e790-4439-954e-64ff997bcc59" width=60%>
 </div>
 - 네이버, 카카오를 통한 회원가입을 지원합니다 ... 
+
 <details>
   <summary>Code</summary> 
   
