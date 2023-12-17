@@ -26,14 +26,19 @@
   
 ## 프로젝트 소개
 #### 프로젝트 개요
-- Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
-- 카카오/네이버 소셜 로그인을 통한 회원가입 및 로그인할 수 있습니다.
-- 로그인 후 가족을 생성하고 이메일을 통해 가족을 초대할 수 있습니다.
-- 캘린더, 메모, 게시판, 건강차트 기능을 지원하며 생성한 내용은 같은 가족끼리 공유됩니다. //주요기능 설명에 링크필
+- '특히나 기억할 만한' 이라는 뜻의 Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
+- Memorious에서는 멀리 떨어져 있는 가족들도 간편하게 의사소통하고 가족간의 추억을 기록 할 수 있도록 아래의 기능 등을 지원합니다.
+  - 캘린더 : 개인/가족의 일정을 추가하고 보기좋게 표시함으로써 효과적인 일정관리를 돕습니다.
+  - 메모 : 가족간 간단한 전달사항이나 메모를 공유하여 편리한 의사소통을 할 수 있습니다.
+  - 게시판 : 공지, 회의, 건의사항, 일상, 여행 등 다양한 주제의 게시글을 작성/공유해 효과적으로 추억을 기록할 수 있습니다.
+  - 건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인해 건강을 관리할 수 있습니다.
+- 편리한 서비스 이용을 위해 카카오/네이버 소셜 로그인을 지원하고, 가족에게 초대 메일을 보내어 간편하게 초대할 수 있습니다.
+
+
 #### 개발 기간
   - 2023.11.03 ~ 2023.11.29 (27일)
 
-#### [요구사항 명세서](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
+#### [요구사항 명세서](https://www.notion.so/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
 
 
@@ -75,7 +80,6 @@
 <p>
   <img src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/Git-8b2813?logo=git&logoColor=white">
-  <img src="https://img.shields.io/badge/GitKraken-179287?logo=gitkraken&logoColor=white">
 </p>
 
 ### Library
@@ -104,7 +108,10 @@
 <p>
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white">
   <img src="https://img.shields.io/badge/IntelliJ-000000?logo=intellijidea&logoColor=white">
+  <img src="https://img.shields.io/badge/GitKraken-179287?logo=gitkraken&logoColor=white">
+  <img src="https://img.shields.io/badge/SourceTree-0057e5?logo=sourcetree&logoColor=white">
   <img src="https://img.shields.io/badge/Notion-000000?logo=notion&logoColor=white">
+  <img src="https://img.shields.io/badge/Figma-f24e1e?logo=figma&logoColor=white">
 </p>
 
 ## ERD 명세서
