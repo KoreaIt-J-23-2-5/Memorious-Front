@@ -26,22 +26,20 @@
   
 ## 프로젝트 소개
 #### 프로젝트 개요
-- '특히나 기억할 만한' 이라는 뜻의 Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
-- Memorious에서는 멀리 떨어져 있는 가족들도 간편하게 의사소통하고 가족간의 추억을 기록 할 수 있도록 아래의 기능 등을 지원합니다.
-  - 캘린더 : 개인/가족의 일정을 추가하고 보기좋게 표시함으로써 효과적인 일정관리를 돕습니다.
-  - 메모 : 가족간 간단한 전달사항이나 메모를 공유하여 편리한 의사소통을 할 수 있습니다.
-  - 게시판 : 공지, 회의, 건의사항, 일상, 여행 등 다양한 주제의 게시글을 작성/공유해 효과적으로 추억을 기록할 수 있습니다.
-  - 건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인해 건강을 관리할 수 있습니다.
-- 편리한 서비스 이용을 위해 카카오/네이버 소셜 로그인을 지원하고, 가족에게 초대 메일을 보내어 간편하게 초대할 수 있습니다.
+- MemorioUs는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
+- 'memory'와 'us'의 합성어로, 단어 그대로의 뜻과 함께 '특별히 기억할만한 우리의 추억'을 의미합니다.
+- MemorioUs에서는 멀리 떨어져 있는 가족들도 손쉽게 의사소통하고 추억을 기록 할 수 있도록 다양한 기능을 지원합니다.
+  - 캘린더 : 개인 및 가족 일정을 하나의 달력에 담아 시각적으료 보여주어 효과적인 일정 관리를 돕습니다.
+  - 메모 : 가족 간 간단한 메시지나 메모를 공유해 편리한 의사소통을 돕습니다.
+  - 게시판 : 다양한 주제로 게시글을 작성하고 공유함으로써 공지사항, 회의, 건의사항, 일상, 여행 등을 효과적으로 기록할 수 있습니다.
+  - 건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인하여 건강을 관리할 수 있습니다.
+- 간편한 카카오/네이버 소셜 로그인을 지원하며, 가족에게 초대 메일을 보내 손쉽게 가족 구성원을 초대할 수 있습니다.
 
 
 #### 개발 기간
   - 2023.11.03 ~ 2023.11.29 (27일)
 
-#### [요구사항 명세서](https://www.notion.so/1-77e4fdb543504afd90accdc80f808117?pvs=4)
-
-
-
+#### [요구사항 명세서 바로가기](https://www.notion.so/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
 ## 개발 환경
   <!-- 
@@ -50,11 +48,11 @@
   -->
 ### Front-End
 <p>
+    <img src="https://img.shields.io/badge/React-18.2.0-4f4f4f?style=flat&logo=react&logoColor=white&labelColor=136276">
+    <img src="https://img.shields.io/badge/Node.js-18.17.1-4f4f4f?logo=nodedotjs&logoColor=white&labelColor=339933">
     <img src="https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=HTML5&logoColor=white">
     <img src="https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white">
     <img src="https://img.shields.io/badge/Javascript-F7DF1E?style=flat&logo=javascript&logoColor=white">
-    <img src="https://img.shields.io/badge/React-18.2.0-4f4f4f?style=flat&logo=react&logoColor=white&labelColor=136276">
-    <img src="https://img.shields.io/badge/Node.js-18.17.1-4f4f4f?logo=nodedotjs&logoColor=white&labelColor=339933">
 </p>
 
 ### Back-End & Database
@@ -88,6 +86,7 @@
   <img src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=reactquery&logoColor=white">
   <img src="https://img.shields.io/badge/ReactRouter-CA4245?style=flat&logo=reactrouter&logoColor=white">
   <img src="https://img.shields.io/badge/Recoil-3578E5?style=flat&logo=recoil&logoColor=white">
+  <img src="https://img.shields.io/badge/Emotion-cb0096?style=flat&logo=react&logoColor=white">
   <img src="https://img.shields.io/badge/StyledComponents-DB7093?style=flat&logo=styledcomponents&logoColor=white">
 </p>
 <p>
@@ -115,8 +114,7 @@
 </p>
 
 ## ERD 명세서
-![ERD_Final](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/63c2893b-3679-4066-a2c2-87e0c21ed127)
-
+![ERD_Final](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/88d14372-8ef5-46f3-bd9b-aa6bc4439bb3)
 
 ## 기능 설명 및 코드리뷰
 
@@ -144,19 +142,19 @@
 <!-- 영상캡쳐 및 사진(gif)는 리팩토링 및 코드 수정 이후에 첨부 -->
 
 ### 가족 초대
-- 가족의 이메일을 입력해 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
-- 초대를 받은 회원은 가족이 입력한 이메일로 회원가입 시 초대가 완료됩니다.
+- 가족의 이메일을 입력하여 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
+- 초대를 받은 회원은 가족이 입력한 이메일을 사용하여 회원가입을 완료하면 초대가 완료됩니다.
 
 ### 캘린더
 <!-- 조회부 GIF -->
-- 한 달 단위로 가족이 추가한 일정을 조회할 수 있으며 각각의 일정은 알고리즘이 정한 순서에따라 보기좋게 배치됩니다.
-- '오늘' '다음 월' '이전 월' 버튼과 연도 dropdown을 통해 원하는 월로 간편하게 이동할 수 있습니다.
--  일정이 많아 모든 일정을 보여주지 못할 경우, 'n개 더보기'를 클릭해 모달창에서 모든 일정을 확인 할 수 있습니다.
+- 한 달 간의 가족 일정을 조회할 수 있으며 각각의 일정은 알고리즘이 정한 순서에따라 보기좋게 배치됩니다.
+- '오늘' '다음 월' '이전 월' 버튼과 연도 드롭다운을 통해 편리하게 원하는 월로 이동할 수 있습니다.
+-  한 날짜에 모든 일정을 보여주지 못할 경우 'n개 더보기'를 표시하고, 해당 날짜의 전체 일정을 확인할 수 있는 모달창을 띄어줍니다.
 <!-- 추가 GIF -->
-- '일정 추가' 버튼 또는 일정 셀을 클릭해 일정을 추가할 수 있습니다.
-- 반복 주기(5가지)와 종료일 또는 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
+- '일정 추가' 버튼 또는 일정 셀을 클릭해 클릭한 날짜에 일정을 추가할 수 있습니다.
+- 반복 주기(5가지)와 종료일 또는 종료 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
 <!-- 상세조회 / 수정 / 삭제 GIF -->
-- 조회된 일정을 클릭하면 나오는 모달창을 통해 세부 내용을 조회하고, 수정 또는 삭제할 수 있습니다.
+- 등록된 일정을 클릭하면 세부 내용을 확인하고, 수정 또는 삭제할 수 있습니다.
   
   <details>
     <summary>Code Review</summary> 
@@ -170,10 +168,10 @@
   </details>
 
 ### 메모
-- 포스트잇과 비슷한 모양의 메모를 추가해 가족들과 공유할 수 있습니다.
-- 최신일정순으로 조회되며 무한스크롤을 지원합니다.
-- 본인이 작성한 메모만 수정,삭제 할 수 있습니다.
-- 내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로 조회할 수 있습니다.
+- 포스트잇과 비슷한 형태의 메모를 작성할 수 있습니다.
+- 최신 일정순으로 정렬되며 무한스크롤을 지원합니다.
+- 작성자 본인만이 메모를 수정하거나 삭제 할 수 있습니다.
+- 내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로운 메모를 조회할 수 있습니다.
 
   <details>
     <summary>Code Review</summary> 
@@ -201,7 +199,9 @@
   </details>
 
 ### 건강 차트
-- 설명
+- 혈당, 걸음수, 맥박 데이터를 그래프로 직관적으로 표시합니다.
+- 사이드바에서 인원별, 기간별(1, 3, 6개월) 필터링을 지원합니다.
+- 입력페이지에서 데이터를 손쉽게 추가 및 수정(모달)할 수 있습니다.
   
   <details>
     <summary>Code Review</summary> 
