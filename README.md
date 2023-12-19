@@ -51,7 +51,6 @@
 | [🔗Github](https://github.com/SeongGwangJu) | [🔗Github](https://github.com/JuyoungWoo) | [🔗Github](https://github.com/yoodeve) |
 
 
-
 ### 역할 분담
 
 #### 공동 작업
@@ -86,6 +85,8 @@
 - 가족 차트 CRUD
 - 메모 CRUD
 - ESLint, Prettier 설정
+
+<p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 개발 환경
   <!-- 
@@ -161,6 +162,8 @@
 
 ![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/890317c5-4265-4ae0-a16c-40c4bd4f1090)
 
+<p align="right"><a href="#목차">목차 🔼</a></p>
+
 ## 기획 문서
 
 #### [🔗요구사항명세서 바로가기](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
@@ -176,6 +179,7 @@
 #### [🔗ERD Cloud 바로 가기](https://www.erdcloud.com/d/BigkZSYCtuzyMenTp)
 ![ERD_Final](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/88d14372-8ef5-46f3-bd9b-aa6bc4439bb3)
 
+<p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 협업 방식
 ### 브랜치 전략 : Github-Flow
@@ -252,6 +256,7 @@
 ```
   </details>
   
+<p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 기능 설명 및 코드리뷰
 
@@ -987,6 +992,8 @@
 
 ### 그 외
 - 사이드바 하단에서 프로필 사진을 클릭해 변경할 수 있습니다.
+  
+<p align="right"><a href="#목차">목차 🔼</a></p>
 
 
 ## 느낀 점
@@ -1010,3 +1017,6 @@
 - 수업을 들었을 땐 잘 이해가 되지 않았던 JWT, Security, OAuth2 소셜 로그인 관련 기능을 직접 맡아 구현해보면서 이해도를 높이는데 큰 도움이 되었습니다.
 - 외부 라이브러리의 도큐먼트를 찾아보며 우리 프로젝트에 적용시키는 부분에서 어려움이 많았는데, 오래 걸리더라도 직접 찾아서 적용해보면서 스스로 문제를 해결하는 능력을 기를 수 있어 좋았습니다.
 - 팀원 간 견해 차이로 인한 팀 분위기 상 소통이 부족했음을 인지하였고, 소통의 중요성을 깨달았습니다. 다음 팀 프로젝트에서는 더욱 적극적으로 소통하기 위해 팀원 모두의 합의점을 찾아가는 등의 노력이 필요함을 느꼈습니다.
+
+<p align="right"><a href="#목차">목차 🔼</a></p>
+  
