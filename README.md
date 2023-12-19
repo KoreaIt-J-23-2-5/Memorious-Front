@@ -1,3 +1,4 @@
+
 [Memorious 바로가기](https://naver.com/)
 
 <div align="center">
@@ -35,11 +36,55 @@
   - 건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인하여 건강을 관리할 수 있습니다.
 - 간편한 카카오/네이버 소셜 로그인을 지원하며, 가족에게 초대 메일을 보내 손쉽게 가족 구성원을 초대할 수 있습니다.
 
-
 #### 개발 기간
   - 2023.11.03 ~ 2023.11.29 (27일)
 
 #### [요구사항 명세서 바로가기](https://www.notion.so/1-77e4fdb543504afd90accdc80f808117?pvs=4)
+
+
+## 팀 소개
+### 팀원 소개
+| 주성광 | 우주영 | 한유정 |
+| :---: | :---: | :---: |
+| <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/829c4522-360c-4c28-90b1-718c0d5fd3ab" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/64acc27a-2f60-46de-a3d0-4a508d8bd2b5" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5d75c485-b451-4d8b-96a1-4ea88781ed5e" width= 150px> |
+| [🔗Github](https://github.com/SeongGwangJu) | [🔗Github](https://github.com/JuyoungWoo) | [🔗Github](https://github.com/yoodeve) |
+
+
+
+### 역할 분담
+
+#### 공동 작업
+- 요구사항명세서 및 화면 정의서
+- API 설계서 작성
+- PPT 제작 및 발표
+- DB 설계 및 관리
+- 이 외 모든 기획 작업 및 문서 작업
+  
+#### 주성광
+- 가족 일정 공유 캘린더 기능 구현
+	- 캘린더 월별 조회
+	- 일정 추가/조회/수정/삭제
+  - 반복 일정 추가
+- 초대 메일 전송 및 초대 기능 구현
+- 프로필 사진 변경 기능
+- 프로젝트 발표(3회)
+- ERD 다이어그램 작성
+ 
+#### 우주영
+- 네이버, 카카오 소셜 로그인 / 회원가입 기능 구현
+- 가족페이지 생성 기능 구현
+- 게시판 기능 구현
+	- 전체 글 조회 및 검색
+	- 상세 글 조회
+	- 글 작성/수정/삭제
+- JWT, Security 관리
+
+#### 한유정(중도 하차)
+- 라우팅 설정
+- 공통 UI, 사이드바 UI 구현
+- 가족 차트 CRUD
+- 메모 CRUD
+- ESLint, Prettier 설정
 
 ## 개발 환경
   <!-- 
@@ -113,33 +158,168 @@
   <img src="https://img.shields.io/badge/Figma-f24e1e?logo=figma&logoColor=white">
 </p>
 
-## ERD 명세서
+![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/890317c5-4265-4ae0-a16c-40c4bd4f1090)
+
+## 기획 문서
+
+#### [🔗요구사항명세서 바로가기](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
+
+#### [🔗화면 정의서 바로가기](https://www.figma.com/community/file/1317744980901381622/memorious-team-library)
+![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/b8909921-3f4d-4dde-ac85-d3f23370de47)
+
+
+#### [🔗API 명세서 바로 가기](https://platinum-infinity-b08.notion.site/3-API-888f25b818f24f9abfce0d1f1c274c8b?pvs=4)
+![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/0311141a-b0ad-4fcd-a846-7747f09fcba0)
+
+
+#### [🔗ERD Cloud 바로 가기](https://www.erdcloud.com/d/BigkZSYCtuzyMenTp)
 ![ERD_Final](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/88d14372-8ef5-46f3-bd9b-aa6bc4439bb3)
+
+
+## 협업 방식
+### 브랜치 전략 : Github-Flow
+![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/4b5a58ea-0fc7-4d8b-996f-5d3e9320d9d7) 
+- 개발 기간이 짧고, 개발을 마친 후 배포를 진행하기 때문에  효율적이고 간소화된 프로세스인 Github Flow를 채택하였습니다.  각 팀원은 자신의 브랜치에서 작업하고, 기능이 완성되면 피드백을 받은 후 'main'브랜치로 merge하였습니다. Github-flow를 채택함으로써  지속적인 통합으로 프로젝트의 안정성을 높이고 팀 간 충돌을 최소화하며 더 나은 협업을 가능하게 하였습니다.
+
+### 협업 툴
+- 노션: 각종 요구사항 관련 문서, 회의록 등의 문서화를 통한 팀원들과 프로젝트 정보를 실시간으로 공유 및 기록하고, 프로젝트의 전반적인 체계를 잡아갈 수 있었습니다.
+
+- Figma: 구현하기에 앞서 필요한 웹사이트의 화면 UI를 효율적으로 디자인할 수 있었습니다.
+
+
+## 팀 컨벤션
+
+### 커밋 컨벤션
+
+```
+- Feat: 새로운 기능에 대한 커밋
+- Fix: 버그 수정에 대한 커밋
+- Build: 빌드 관련 파일 수정에 대한 커밋
+- Docs: 도큐먼트 수정에 대한 커밋(예: readme.md, json 파일 등 수정/ 문서 관련 라이브러리 설치 등)
+- Chore: 그 외 자잘한 수정에 대한 커밋
+- Comment: 필요한 주석 추가 및 변경
+- Style: 코드 문법 또는 포멧 수정에 대한 커밋
+- Refactor: 코드 리팩토링에 대한 커밋
+- Test: 테스트 코드 수정에 대한 커밋
+- Template: 라이브러리, 노드 수정에 대한 커밋
+```
+
+
+### 코드 컨벤션
+
+```
+- 리액트 코딩에 주로 쓰이는 컨벤션을 참고하여 저희 조만의 코드 컨벤션을 만들었습니다.
+- 문자열 표기시 쌍따옴표를 사용합니다.
+- **컴포넌트로 분리된 파일은 PascalCase**으로 작성합니다.
+- 컴포넌트가 아닌 파일, **함수명, 변수명은 camelCase**로 작성합니다.
+- 다른 스타일 시트 파일(Emotion)은, **style.js**를 붙여주고, **앞글자는 소문자**로 합니다. (확장자는 .js)
+- boolean값의 변수명에는 is를 접두사로 붙입니다.
+- 상수는 대문자로만 작성합니다. (예시: FINAL_CONSTANT)
+- 컴포넌트 파일 내 **import 순서는 모듈 → 컴포넌트 → 스타일컴포넌트 순**으로 합니다.
+- 문장이 종료될 때는 세미콜론을 붙여줍니다.
+- 가독성을 위해 한 줄에 하나의 문장만 작성합니다.(한줄 300자)
+- 주석은 설명하려는 구문에 맞춰 들여쓰기 합니다.
+- 연산자 사이에는 공백을 추가하여 가독성을 높입니다.
+- 콤마 다음에 값이 올 경우 공백을 추가하여 가독성을 높입니다.
+- 사용하지 않는 변수는 제거합니다.
+- 객체값은 비구조화 할당으로 사용합니다.
+- 코드 파일의 마지막 줄은 공백으로 둡니다.
+```
+
+#### ESLint, Prettier
+- 정해진 규칙에 따라 자동적으로 코드 스타일을 정리해 코드의 일관성을 유지하고자 했습니다.
+- 코드 품질 관리는 eslint에, 코드 포맷팅은 prettier에 일임해 사용했습니다.
+- Airbnb의 코딩 컨벤션을 참고해 사용했고, 예외 규칙은 팀원들과 협의했습니다.
+- 협업 시 매번 컨벤션을 신경 쓸 필요 없이 빠르게 개발하는 데에 목적을 두었습니다.
+
+> 코드 품질 관리 [<img src="https://img.shields.io/badge/Eslint-38297c?logo=eslint&logoColor=white"> 스타일 가이드](https://github.com/apple77y/javascript/tree/master/react)
+
+
+> 코드 포맷팅  <img src="https://img.shields.io/badge/Prettier-8c6414?logo=prettier&logoColor=white">
+  <details>
+    <summary> Prttier Settings</summary> 
+    
+```javascript
+{
+	"printWidth": 300, // 줄 바꿈 시 폭 길이
+	"tabWidth": 4, // 탭 너비
+	"useTabs": false, // 탭 사용 여부
+	"semi": true, // 세미콜론 사용 여부
+	"trailingComma": "all", // 여러 줄을 사용할 때, 후행 콤마 사용 방식
+	"arrowParens": "avoid" // 화살표 함수 괄호 사용 여부
+}
+```
+  </details>
+  
 
 ## 기능 설명 및 코드리뷰
 
 <!-- Example Foam !-->
-### 회원가입 및 로그인
-  <div>
-    <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/a1d7d556-e790-4439-954e-64ff997bcc59" width=60%>
-  </div>
-- 네이버, 카카오를 통한 회원가입을 지원합니다 ... 
+### 소셜 로그인 / 회원가입
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/a1d7d556-e790-4439-954e-64ff997bcc59" width=80%>
+</div>
+
+   - 사용자가 로그인이 되어있지 않을 시 표시되는 로그인 화면입니다.
+   - 네이버, 카카오를 통한 로그인을 지원합니다. 
+ 
+<div>
+  <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5cefc769-d3f0-4df5-add1-11e41e4580b2" width=80%>
+</div>
+
+- 소셜 계정으로 로그인 시도했을 시 회원가입이 되어있지 않을 경우 추가 입력(회원가입) 화면으로 이동합니다.
+
+<details>
+	<summary>Code Review</summary>
+
+#### Front-End
+```javascript
+	const fetchData = async () => {
+	};
+```
+(코드 설명)
+
+#### Back-End
+
+```java
+   public class BootSpringBootApplication {
+     public static void main(String[] args) {
+       System.out.println("Sample");
+     }
+   }
+```
+(코드 설명)
+</details>
+
+### 가족 페이지 생성
+<div>
+	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/550dd4de-29be-4f18-93e0-99844ac3b574" width=80%>
+</div>
+
+- 가족 구성원과의 추억과 일정 등을 기록할 우리 가족만의 페이지를 만드는 기능입니다.
+- 로그인 후 소속된 가족이 없을 경우 다음 화면이 표시됩니다.
 
   <details>
-    <summary>Code Review</summary> 
+    <summary>Code Review</summary>
     
-    ```java
+	 #### Front-End
+	```javascript
+      const fetchData = async () => {
+      };
+    ```
+   (코드 설명)
+
+	#### Back-End
+	```java
     public class BootSpringBootApplication {
       public static void main(String[] args) {
-        System.out.println("Hello, Honeymon");
+        System.out.println("Sample");
       }
     }
     ```
-    
-    {코드 설명...}
+    (코드 설명)
   </details>
-
-<!-- 영상캡쳐 및 사진(gif)는 리팩토링 및 코드 수정 이후에 첨부 -->
+ 
 
 ### 가족 초대
 - 가족의 이메일을 입력하여 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
@@ -780,18 +960,38 @@
 - 내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로운 메모를 조회할 수 있습니다.
 
 
+
 ### 게시판
-- 설명
+<div>
+	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5ef99699-3497-4486-8bcf-bfa0c66f7528" width=70%>
+	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/2d9e78ad-f5c5-4708-839c-9199dca303ad" width=70%>
+	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/7145c35a-dff7-4b0c-a782-8efa6fed3a53" width=70%>
+
+</div>
+
+- 가족 구성원이 회의록, 식단, 건의사항 등 카테고리를 지정하고 사진과 글을 포스팅할 수 있는 기능입니다.
+- 전체 글 목록이 게시판 형태로 표시됩니다.
+- 카테고리별로 게시글을 조회할 수 있고, 또한 검색 범위와 입력한 검색어에 따른 검색이 가능합니다.
 
   <details>
-    <summary>Code Review</summary> 
+    <summary>Code Review</summary>
     
-    ```javascript
+	 #### Front-End
+	```javascript
       const fetchData = async () => {
       };
     ```
-    
-    {코드 설명...}
+   (코드 설명)
+
+	#### Back-End
+	```java
+    public class BootSpringBootApplication {
+      public static void main(String[] args) {
+        System.out.println("Sample");
+      }
+    }
+    ```
+    (코드 설명)
   </details>
 
 ### 건강 차트
@@ -821,4 +1021,7 @@
 - (BE) 캘린더의 일정 반복 추가 기능을 구현하는 것이 가장 복잡한 작업이었다. 16가지 경우의수를 처리해야 했는데, 각각의 경우의수를 따져보며 9가지 경우를 정의하고 6가지의 메서드를 실행하는 방식으로 구현했다. 서비스단 코드의 가독성과 CSR을 고려해 클래스를 분리하고 코드의 재사용성을 높이는 등 많은 노력을 한 결과이지만 중첩 switch 문을 사용했기에 가독성이 떨어지는 아쉬움이 있다. 또한 '매일' 반복일 경우 한 번에 3,650 개의 데이터가 DB에 추가되며 성능 문제가 발생했다. OOP에 대한 이해와 개발 언어 및 SQL의 기본기, 클린코드, 알고리즘과 자료구조 등 CS 공부가 필수적임을 깨닫게 되었다. 기획단계에서 철저히 DB 설계를 한 덕분에 개발단계에서 DB 관련한 애로사항이나 변경사항이 없었던 점은 다행이였다. 
   
 ### 우주영
-
+- 프로젝트를 진행하면서 문서 작업을 통한 프로젝트의 체계화, Git을 통한 형상 관리, 코드 리뷰 등을 통해 협업에 있어 좋은 경험이 되었습니다.
+- 수업을 들었을 땐 잘 이해가 되지 않았던 JWT, Security, OAuth2 소셜 로그인 관련 기능을 직접 맡아 구현해보면서 이해도를 높이는데 큰 도움이 되었습니다.
+- 외부 라이브러리의 도큐먼트를 찾아보며 우리 프로젝트에 적용시키는 부분에서 어려움이 많았는데, 오래 걸리더라도 직접 찾아서 적용해보면서 스스로 문제를 해결하는 능력을 기를 수 있어 좋았습니다.
+- 팀원 간 견해 차이로 인한 팀 분위기 상 소통이 부족했음을 인지하였고, 소통의 중요성을 깨달았습니다. 다음 팀 프로젝트에서는 더욱 적극적으로 소통하기 위해 팀원 모두의 합의점을 찾아가는 등의 노력이 필요함을 느꼈습니다.
