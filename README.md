@@ -1,99 +1,112 @@
-
-[Memorious 바로가기](https://naver.com/)
+[Memorious 바로가기](http://memorious-korit.s3-website.ap-northeast-2.amazonaws.com/)
 
 <div align="center">
 
 # Memorious - 우리 가족만을 위한 플랫폼
+
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/0b8a28b9-7d2f-4732-90d8-ebcd9e0de5da" width="40%">
 
-  #### 코리아IT아카데미(부산) 
-  #### AWS 기반 공공ㆍ빅데이터 활용 웹서비스 개발자 양성과정(2회차)
-  #### 최종 프로젝트 : 4조
+#### 코리아IT아카데미(부산)
+
+#### AWS 기반 공공ㆍ빅데이터 활용 웹서비스 개발자 양성과정(2회차)
+
+#### 최종 프로젝트 : 4조
+
 </div>
 
 ## 목차
-- [프로젝트 소개](#프로젝트-소개)
-- [팀 소개](#팀-소개)
-- [개발환경](#개발-환경)
-- [기획 문서](#기획-문서)
-- [협업 방식](#협업-방식)
-- [팀 컨벤션](#팀-컨벤션)
-- [주요기능 설명](#기능-설명-및-코드리뷰)
-- [기획 문서](#기획-문서)
-- [기능 설명 및 코드리뷰](#기능-설명-및-코드리뷰)
-- [회고](#느낀-점)
 
+-   [프로젝트 소개](#프로젝트-소개)
+-   [팀 소개](#팀-소개)
+-   [개발환경](#개발-환경)
+-   [기획 문서](#기획-문서)
+-   [협업 방식](#협업-방식)
+-   [팀 컨벤션](#팀-컨벤션)
+-   [주요기능 설명](#기능-설명-및-코드리뷰)
+-   [기획 문서](#기획-문서)
+-   [기능 설명 및 코드리뷰](#기능-설명-및-코드리뷰)
+-   [회고](#느낀-점)
 
 ## 프로젝트 소개
-#### 프로젝트 개요
-- Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
-- 'memory'와 'us'의 합성어로, 단어 그대로의 뜻과 함께 '특별히 기억할만한 우리의 추억'을 의미합니다.
-- Memorious에서는 멀리 떨어져 있는 가족들도 손쉽게 의사소통하고 추억을 기록 할 수 있도록 다양한 기능을 지원합니다.
-  - 캘린더 : 개인 및 가족 일정을 하나의 달력에 담아 시각적으료 보여주어 효과적인 일정 관리를 돕습니다.
-  - 메모 : 가족 간 간단한 메시지나 메모를 공유해 편리한 의사소통을 돕습니다.
-  - 게시판 : 다양한 주제로 게시글을 작성하고 공유함으로써 공지사항, 회의, 건의사항, 일상, 여행 등을 효과적으로 기록할 수 있습니다.
-  - 건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인하여 건강을 관리할 수 있습니다.
-- 간편한 카카오/네이버 소셜 로그인을 지원하며, 가족에게 초대 메일을 보내 손쉽게 가족 구성원을 초대할 수 있습니다.
 
+#### 프로젝트 개요
+
+-   Memorious는 '왜 가족만을 위한 플랫폼은 없을까?' 라는 물음과 함께 시작된 프로젝트입니다.
+-   'memory'와 'us'의 합성어로, 단어 그대로의 뜻과 함께 '특별히 기억할만한 우리의 추억'을 의미합니다.
+-   Memorious에서는 멀리 떨어져 있는 가족들도 손쉽게 의사소통하고 추억을 기록 할 수 있도록 다양한 기능을 지원합니다.
+    -   캘린더 : 개인 및 가족 일정을 하나의 달력에 담아 시각적으료 보여주어 효과적인 일정 관리를 돕습니다.
+    -   메모 : 가족 간 간단한 메시지나 메모를 공유해 편리한 의사소통을 돕습니다.
+    -   게시판 : 다양한 주제로 게시글을 작성하고 공유함으로써 공지사항, 회의, 건의사항, 일상, 여행 등을 효과적으로 기록할 수 있습니다.
+    -   건강 차트 : 본인의 일일 걸음수/혈당/맥박을 기록하고 가족의 데이터를 그래프로 확인하여 건강을 관리할 수 있습니다.
+-   간편한 카카오/네이버 소셜 로그인을 지원하며, 가족에게 초대 메일을 보내 손쉽게 가족 구성원을 초대할 수 있습니다.
 
 #### 개발 기간
-  - 2023.11.03 ~ 2023.11.29 (27일)
+
+-   2023.11.03 ~ 2023.11.29 (27일)
 
 #### [요구사항 명세서 바로가기](https://www.notion.so/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
 <p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 팀 소개
-### 팀원 소개
-| 주성광 | 우주영 | 한유정 |
-| :---: | :---: | :---: |
-| <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/829c4522-360c-4c28-90b1-718c0d5fd3ab" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/64acc27a-2f60-46de-a3d0-4a508d8bd2b5" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5d75c485-b451-4d8b-96a1-4ea88781ed5e" width= 150px> |
-| [🔗Github](https://github.com/SeongGwangJu) | [🔗Github](https://github.com/JuyoungWoo) | [🔗Github](https://github.com/yoodeve) |
 
+### 팀원 소개
+
+|                                                              주성광                                                              |                                                              우주영                                                              |                                                              한유정                                                              |
+| :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: | :------------------------------------------------------------------------------------------------------------------------------: |
+| <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/829c4522-360c-4c28-90b1-718c0d5fd3ab" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/64acc27a-2f60-46de-a3d0-4a508d8bd2b5" width= 150px> | <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5d75c485-b451-4d8b-96a1-4ea88781ed5e" width= 150px> |
+|                                           [🔗Github](https://github.com/SeongGwangJu)                                            |                                            [🔗Github](https://github.com/JuyoungWoo)                                             |                                              [🔗Github](https://github.com/yoodeve)                                              |
 
 ### 역할 분담
 
 #### 공동 작업
-- 요구사항명세서 및 화면 정의서
-- API 설계서 작성
-- PPT 제작 및 발표
-- DB 설계 및 관리
-- 이 외 모든 기획 작업 및 문서 작업
-  
+
+-   요구사항명세서 및 화면 정의서
+-   API 설계서 작성
+-   PPT 제작 및 발표
+-   DB 설계 및 관리
+-   이 외 모든 기획 작업 및 문서 작업
+
 #### 주성광
-- 가족 일정 공유 캘린더 기능 구현
-	- 캘린더 월별 조회
-	- 일정 추가/조회/수정/삭제
-  - 반복 일정 추가
-- 초대 메일 전송 및 초대 기능 구현
-- 프로필 사진 변경 기능
-- 프로젝트 발표(3회)
-- ERD 다이어그램 작성
- 
+
+-   가족 일정 공유 캘린더 기능 구현
+    -   캘린더 월별 조회
+    -   일정 추가/조회/수정/삭제
+    -   반복 일정 추가
+-   초대 메일 전송 및 초대 기능 구현
+-   프로필 사진 변경 기능
+-   프로젝트 발표(3회)
+-   ERD 다이어그램 작성
+
 #### 우주영
-- 네이버, 카카오 소셜 로그인 / 회원가입 기능 구현
-- 가족페이지 생성 기능 구현
-- 게시판 기능 구현
-	- 전체 글 조회 및 검색
-	- 상세 글 조회
-	- 글 작성/수정/삭제
-- JWT, Security 관리
+
+-   네이버, 카카오 소셜 로그인 / 회원가입 기능 구현
+-   가족페이지 생성 기능 구현
+-   게시판 기능 구현
+    -   전체 글 조회 및 검색
+    -   상세 글 조회
+    -   글 작성/수정/삭제
+-   JWT, Security 관리
 
 #### 한유정(중도 하차)
-- 라우팅 설정
-- 공통 UI, 사이드바 UI 구현
-- 가족 차트 CRUD
-- 메모 CRUD
-- ESLint, Prettier 설정
+
+-   라우팅 설정
+-   공통 UI, 사이드바 UI 구현
+-   가족 차트 CRUD
+-   메모 CRUD
+-   ESLint, Prettier 설정
 
 <p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 개발 환경
+
   <!-- 
   <img src="https://img.shields.io/badge/{내용}-{배경 색깔}?style={스타일}&logo={로고이름}&logoColor={로고 색깔}"/>
   <img src="https://img.shields.io/badge/-?logo= &logoColor=white">
   -->
+
 ### Front-End
+
 <p>
     <img src="https://img.shields.io/badge/React-18.2.0-4f4f4f?style=flat&logo=react&logoColor=white&labelColor=136276">
     <img src="https://img.shields.io/badge/Node.js-18.17.1-4f4f4f?logo=nodedotjs&logoColor=white&labelColor=339933">
@@ -103,6 +116,7 @@
 </p>
 
 ### Back-End & Database
+
 <p>
   <img src="https://img.shields.io/badge/Java-11-4f4f4f?logo=data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABgAAAAYCAYAAADgdz34AAAACXBIWXMAAAsTAAALEwEAmpwYAAABn0lEQVR4nNXVPUiWURQH8LeisHwxqiUoowQx6AOhIVwKLYg+oCm3Phwa2oqChgiEEGwodHKoJcWh4SUICdHAQRqipYKghohEaEgcwoIi+MWtE7wEwXPreaEOHHgO99z//9z7P+c+lcq/aNjbSPCVuNco8HWYwEgjwPfhLWaxBidwC91lgJ/CV8ygiut4ho1lVf8eL7A64kWcLAU8GR6k66iLkw61SlmG9XiCTRFvxbvSCJKhBb3x3YEzlb8xnAtRU6dsx7Lf5K3ADjzEzRyCOyHmZ7zEY0yHT2EcA1gb+Z1Yyj3FUYzFlbSFJz22YM8vuZfTjOQSXMXH8NfhC37YPA5EXjceYVsWQWzeHTocDO/BERyq02BXNnAdwe2o+APm8CniJRz/E8DmqLQz4vR6HsNFXEoTHO/S96mOnFU5BOlJeIWuBF4gPxVwP4fgblzDEA6jHU11601oDS2u4Dn6Y61alCRtvhH9/ibm4Ut0U+qepxjF+Z+dg/0YzDnJ8gI5m3EWk1FQlhbpp7Izhq0PF3ANwzF8tZj209hQGPi/s28wfyzAH3ua7QAAAABJRU5ErkJggg==&logoColor=white&labelColor=4cc71e">
   <img src="https://img.shields.io/badge/Spring_Boot-2.6.6-4f4f4f?logo=springboot&logoColor=white&labelColor=6DB33F">
@@ -122,12 +136,14 @@
 </p>
 
 ### Version Control
+
 <p>
   <img src="https://img.shields.io/badge/Github-181717?logo=github&logoColor=white">
   <img src="https://img.shields.io/badge/Git-8b2813?logo=git&logoColor=white">
 </p>
 
 ### Library
+
 <p>
   <img src="https://img.shields.io/badge/Axios-391b89?logo=axios&logoColor=white">
   <img src="https://img.shields.io/badge/ReactQuery-FF4154?style=flat&logo=reactquery&logoColor=white">
@@ -151,6 +167,7 @@
 </p>
 
 ### Tools
+
 <p>
   <img src="https://img.shields.io/badge/VS_Code-007ACC?style=flat&logo=visualstudiocode&logoColor=white">
   <img src="https://img.shields.io/badge/IntelliJ-000000?logo=intellijidea&logoColor=white">
@@ -169,28 +186,32 @@
 #### [🔗요구사항명세서 바로가기](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
 #### [🔗화면 정의서 바로가기](https://www.figma.com/file/XsloYQuHaHKrOM6K66LOQp/Memorious-team-library?type=design&node-id=0%3A1&mode=design&t=CUj5TWSMSkEbdvsB-1)
+
 ![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/b8909921-3f4d-4dde-ac85-d3f23370de47)
 
-
 #### [🔗API 명세서 바로 가기](https://platinum-infinity-b08.notion.site/3-API-888f25b818f24f9abfce0d1f1c274c8b?pvs=4)
+
 ![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/0311141a-b0ad-4fcd-a846-7747f09fcba0)
 
-
 #### [🔗ERD Cloud 바로 가기](https://www.erdcloud.com/d/BigkZSYCtuzyMenTp)
+
 ![ERD_Final](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/88d14372-8ef5-46f3-bd9b-aa6bc4439bb3)
 
 <p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 협업 방식
+
 ### 브랜치 전략 : Github-Flow
-![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/4b5a58ea-0fc7-4d8b-996f-5d3e9320d9d7) 
-- 개발 기간이 짧고, 개발을 마친 후 배포를 진행하기 때문에  효율적이고 간소화된 프로세스인 Github Flow를 채택하였습니다.  각 팀원은 자신의 브랜치에서 작업하고, 기능이 완성되면 피드백을 받은 후 'main'브랜치로 merge하였습니다. Github-flow를 채택함으로써  지속적인 통합으로 프로젝트의 안정성을 높이고 팀 간 충돌을 최소화하며 더 나은 협업을 가능하게 하였습니다.
+
+![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/4b5a58ea-0fc7-4d8b-996f-5d3e9320d9d7)
+
+-   개발 기간이 짧고, 개발을 마친 후 배포를 진행하기 때문에 효율적이고 간소화된 프로세스인 Github Flow를 채택하였습니다. 각 팀원은 자신의 브랜치에서 작업하고, 기능이 완성되면 피드백을 받은 후 'main'브랜치로 merge하였습니다. Github-flow를 채택함으로써 지속적인 통합으로 프로젝트의 안정성을 높이고 팀 간 충돌을 최소화하며 더 나은 협업을 가능하게 하였습니다.
 
 ### 협업 툴
-- 노션: 각종 요구사항 관련 문서, 회의록 등의 문서화를 통한 팀원들과 프로젝트 정보를 실시간으로 공유 및 기록하고, 프로젝트의 전반적인 체계를 잡아갈 수 있었습니다.
 
-- Figma: 구현하기에 앞서 필요한 웹사이트의 화면 UI를 효율적으로 디자인할 수 있었습니다.
+-   노션: 각종 요구사항 관련 문서, 회의록 등의 문서화를 통한 팀원들과 프로젝트 정보를 실시간으로 공유 및 기록하고, 프로젝트의 전반적인 체계를 잡아갈 수 있었습니다.
 
+-   Figma: 구현하기에 앞서 필요한 웹사이트의 화면 UI를 효율적으로 디자인할 수 있었습니다.
 
 ## 팀 컨벤션
 
@@ -208,7 +229,6 @@
 - Test: 테스트 코드 수정에 대한 커밋
 - Template: 라이브러리, 노드 수정에 대한 커밋
 ```
-
 
 ### 코드 컨벤션
 
@@ -232,15 +252,16 @@
 ```
 
 #### ESLint, Prettier
-- 정해진 규칙에 따라 자동적으로 코드 스타일을 정리해 코드의 일관성을 유지하고자 했습니다.
-- 코드 품질 관리는 eslint에, 코드 포맷팅은 prettier에 일임해 사용했습니다.
-- Airbnb의 코딩 컨벤션을 참고해 사용했고, 예외 규칙은 팀원들과 협의했습니다.
-- 협업 시 매번 컨벤션을 신경 쓸 필요 없이 빠르게 개발하는 데에 목적을 두었습니다.
+
+-   정해진 규칙에 따라 자동적으로 코드 스타일을 정리해 코드의 일관성을 유지하고자 했습니다.
+-   코드 품질 관리는 eslint에, 코드 포맷팅은 prettier에 일임해 사용했습니다.
+-   Airbnb의 코딩 컨벤션을 참고해 사용했고, 예외 규칙은 팀원들과 협의했습니다.
+-   협업 시 매번 컨벤션을 신경 쓸 필요 없이 빠르게 개발하는 데에 목적을 두었습니다.
 
 > 코드 품질 관리 [<img src="https://img.shields.io/badge/Eslint-38297c?logo=eslint&logoColor=white"> 스타일 가이드](https://github.com/apple77y/javascript/tree/master/react)
 
+> 코드 포맷팅 <img src="https://img.shields.io/badge/Prettier-8c6414?logo=prettier&logoColor=white">
 
-> 코드 포맷팅  <img src="https://img.shields.io/badge/Prettier-8c6414?logo=prettier&logoColor=white">
   <details>
     <summary> Prettier Settings</summary> 
     
@@ -261,28 +282,31 @@
 ## 기능 설명 및 코드리뷰
 
 <!-- Example Foam !-->
+
 ### 소셜 로그인 / 회원가입
+
 <div>
      <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/a1d7d556-e790-4439-954e-64ff997bcc59" width=80%>
 </div>
 
-   - 사용자가 로그인이 되어있지 않을 시 표시되는 로그인 화면입니다.
-   - 네이버, 카카오를 통한 로그인을 지원합니다. 
- 
+-   사용자가 로그인이 되어있지 않을 시 표시되는 로그인 화면입니다.
+-   네이버, 카카오를 통한 로그인을 지원합니다.
+
 <div>
   <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5cefc769-d3f0-4df5-add1-11e41e4580b2" width=80%>
 </div>
 
-- 소셜 계정으로 로그인 시도했을 시 회원가입이 되어있지 않을 경우 추가 입력(회원가입) 화면으로 이동합니다.
+-   소셜 계정으로 로그인 시도했을 시 회원가입이 되어있지 않을 경우 추가 입력(회원가입) 화면으로 이동합니다.
 
 <details>
 	<summary>Code Review</summary>
 
 #### Front-End
+
 ```javascript
-	const fetchData = async () => {
-	};
+const fetchData = async () => {};
 ```
+
 (코드 설명)
 
 #### Back-End
@@ -294,95 +318,102 @@
      }
    }
 ```
+
 (코드 설명)
+
 </details>
 
 ### 가족 페이지 생성
+
 <div>
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/550dd4de-29be-4f18-93e0-99844ac3b574" width=80%>
 </div>
 
-- 가족 구성원과의 추억과 일정 등을 기록할 우리 가족만의 페이지를 만드는 기능입니다.
-- 로그인 후 소속된 가족이 없을 경우 다음 화면이 표시됩니다.
-
-  <details>
-    <summary>Code Review</summary>
-    
-	 #### Front-End
-	```javascript
-      const fetchData = async () => {
-      };
-    ```
-   (코드 설명)
-
-	#### Back-End
-	```java
-    public class BootSpringBootApplication {
-      public static void main(String[] args) {
-        System.out.println("Sample");
-      }
-    }
-    ```
-    (코드 설명)
-  </details>
- 
-
-### 가족 초대
-- 가족의 이메일을 입력하여 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
-- 초대를 받은 회원은 가족이 입력한 이메일을 사용하여 회원가입하면 초대가 완료됩니다.
-  <details>
-    <summary>Code Review</summary> 
-    - 회원가입 완료 후 요청을 보냄
+-   가족 구성원과의 추억과 일정 등을 기록할 우리 가족만의 페이지를 만드는 기능입니다.
+-   로그인 후 소속된 가족이 없을 경우 다음 화면이 표시됩니다.
 
     <details>
-      <summary>service</summary> 
-        
+      <summary>Code Review</summary>
+      
+     #### Front-End
+    ```javascript
+        const fetchData = async () => {
+        };
+      ```
+     (코드 설명)
+
+    #### Back-End
+
     ```java
-    public boolean isInvitedByEmail () {
-        PrincipalUser principalUser = (PrincipalUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
-        User user = principalUser.getUser();
-
-        String email = user.getEmail(); //초대받는 사람의 email
-        int userId = user.getUserId(); //초대 받는 사람의 userId
-        int familyId = inviteMapper.getFamilyIdByEmail(email); //초대 하는 가족의Id
-
-        // status : null(초대된 적 없음) 0(초대이력o, 가족소속x), 1(이미 소속완료)
-        Integer inviteStatus = inviteMapper.getInvitationStatusByEmail(email);
-
-        if(inviteStatus == null) {
-            throw new MailException("초대된 적이 없습니다.");
+      public class BootSpringBootApplication {
+        public static void main(String[] args) {
+          System.out.println("Sample");
         }
-
-        if(inviteStatus == 1) {
-            throw new MailException("이미 초대가 완료되었습니다.");
-        }
-
-        //member tb에 insert
-        Map<String, Integer> memberMap = new HashMap<>();
-
-        memberMap.put("userId", userId);
-        memberMap.put("familyId", familyId);
-
-        try {
-            inviteMapper.insertMember(memberMap);
-        } catch (Exception e) {
-            e.printStackTrace();
-        }
-        //History의 초대상태 값을 1로 변경
-        try {
-            inviteMapper.updateHistory(email);
-        }catch (Exception e) {
-            e.printStackTrace();
-            throw new MailException("초대 상태 수정 중 오류");
-        }
-        return inviteStatus == 0 ;
-    }
+      }
     ```
+
+    (코드 설명)
+    </details>
+
+### 가족 초대
+
+-   가족의 이메일을 입력하여 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
+-   초대를 받은 회원은 가족이 입력한 이메일을 사용하여 회원가입하면 초대가 완료됩니다.
+    <details>
+      <summary>Code Review</summary> 
+      - 회원가입 완료 후 요청을 보냄
+
+      <details>
+        <summary>service</summary> 
+          
+      ```java
+      public boolean isInvitedByEmail () {
+          PrincipalUser principalUser = (PrincipalUser) SecurityContextHolder.getContext().getAuthentication().getPrincipal();
+          User user = principalUser.getUser();
+
+          String email = user.getEmail(); //초대받는 사람의 email
+          int userId = user.getUserId(); //초대 받는 사람의 userId
+          int familyId = inviteMapper.getFamilyIdByEmail(email); //초대 하는 가족의Id
+
+          // status : null(초대된 적 없음) 0(초대이력o, 가족소속x), 1(이미 소속완료)
+          Integer inviteStatus = inviteMapper.getInvitationStatusByEmail(email);
+
+          if(inviteStatus == null) {
+              throw new MailException("초대된 적이 없습니다.");
+          }
+
+          if(inviteStatus == 1) {
+              throw new MailException("이미 초대가 완료되었습니다.");
+          }
+
+          //member tb에 insert
+          Map<String, Integer> memberMap = new HashMap<>();
+
+          memberMap.put("userId", userId);
+          memberMap.put("familyId", familyId);
+
+          try {
+              inviteMapper.insertMember(memberMap);
+          } catch (Exception e) {
+              e.printStackTrace();
+          }
+          //History의 초대상태 값을 1로 변경
+          try {
+              inviteMapper.updateHistory(email);
+          }catch (Exception e) {
+              e.printStackTrace();
+              throw new MailException("초대 상태 수정 중 오류");
+          }
+          return inviteStatus == 0 ;
+
+    }
+
+    ````
     </details>
 
     <details>
-      <summary>Mapper.xml</summary> 
-        
+      <summary>Mapper.xml</summary>
+
     ```java
     <insert id="insertMember">
         insert into member_tb(member_id, user_id, family_id)
@@ -427,106 +458,110 @@
         WHERE
             invited_email = #{email};
     </select>
-    ```
+    ````
+
+      </details>
+      {코드 설명...}
     </details>
-    {코드 설명...}
-  </details>
 
 ### 캘린더
+
 <!-- 조회부 GIF -->
-- 한 달 간의 가족 일정을 조회할 수 있으며 각각의 일정은 알고리즘이 정한 순서에 따라 보기좋게 배치됩니다.
-  <details>
-    <summary>Code Review</summary> 
+
+-   한 달 간의 가족 일정을 조회할 수 있으며 각각의 일정은 알고리즘이 정한 순서에 따라 보기좋게 배치됩니다.
+    <details>
+      <summary>Code Review</summary>
+
+      <details>
+        <summary>1. 데이터 정렬</summary> 
+        
+      ```javascript
+        const sortCalendarData = (a, b) => {
+            // 1-1. 시작 날짜순 정렬
+            const startDiff = dayjs(a.startDate).diff(b.startDate);
+            if (startDiff !== 0) {
+                return startDiff;
+            }
+          
+          // 1-2. 일정 길이가 큰 순으로 정렬
+          const diffA = dayjs(a.endDate).diff(a.startDate);
+          const diffB = dayjs(b.endDate).diff(b.startDate);
+      
+          if (diffA > diffB) {
+              return -1;
+          }
+          if (diffA < diffB) {
+              return 1;
+          }
+      
+          // 1-3. 종일 일정 우선
+          if (a.isAllDay) {
+              return -1;
+          }
+          if (b.isAllDay) {
+              return 1;
+          }
+      
+          // 1-4. 시작 시간이 이른 순서
+          const startTimeA = dayjs(`${a.startDate} ${a.startTime}`);
+          const startTimeB = dayjs(`${b.startDate} ${b.startTime}`);
+      
+          return startTimeA.diff(startTimeB);
+        };
+      
+      ```
+      </details>
+
+      <details>
+        <summary>2. 데이터 전처리</summary> 
+        
+      ```javascript
+        // 여러 주에 걸친 일정들을 주 단위로 나누고 일정 표시에 필요한 인덱스값 추가
+        const preprocessData = schedule => {
+            let startDate = dayjs(schedule.startDate);
+            const endDate = dayjs(schedule.endDate);
+            const weeklySchedules = [];
+            let weekIndex = 1;
+
+        // 여러 일의 일정들만 수행
+        if (schedule.startDate !== schedule.endDate) {
+            // 주를 나누기 위해 시작날짜부터 종료날짜까지 반복
+            while (startDate.isBefore(endDate) || startDate.isSame(endDate)) {
+                // 시작 날이 있는 주의 첫날과 끝날
+                const { startOfWeek, endOfWeek } = getWeekRange(startDate);
+
+                // 주의 시작일이 해당 일정의 시작일 이전이면 시작일을 해당 일정의 시작일로 설정
+                const adjustedStartOfWeek = startDate.isAfter(startOfWeek) ? startDate : startOfWeek;
+                // 주의 종료일이 해당 일정의 종료일 이후이면 종료일을 해당 일정의 종료일로 설정
+                const adjustedEndOfWeek = endDate.isBefore(endOfWeek) ? endDate : endOfWeek;
+
+                // 며칠짜리 일정인지 인덱스 부여하고 배열에 추가함
+                const dayDiff = adjustedEndOfWeek.diff(adjustedStartOfWeek, "day") + 1;
+                weeklySchedules.push({
+                    ...schedule,
+                    startDate: adjustedStartOfWeek.format("YYYY-MM-DD"),
+                    endDate: adjustedEndOfWeek.format("YYYY-MM-DD"),
+                    dayDiff,
+                    weekIndex,
+                });
+
+                // startDate를 다음주의 첫 날로 변경
+                startDate = startOfWeek.add(1, "week");
+                weekIndex += 1;
+            }
+        } else {
+            // 당일 일정들 배열에 추가
+            weeklySchedules.push({ ...schedule, dayDiff: 0, weekIndex: 0 });
+        }
+        return weeklySchedules;
+        };
+
+    ````
+    </details>
 
     <details>
-      <summary>1. 데이터 정렬</summary> 
-      
-    ```javascript
-      const sortCalendarData = (a, b) => {
-          // 1-1. 시작 날짜순 정렬
-          const startDiff = dayjs(a.startDate).diff(b.startDate);
-          if (startDiff !== 0) {
-              return startDiff;
-          }
-        
-        // 1-2. 일정 길이가 큰 순으로 정렬
-        const diffA = dayjs(a.endDate).diff(a.startDate);
-        const diffB = dayjs(b.endDate).diff(b.startDate);
-    
-        if (diffA > diffB) {
-            return -1;
-        }
-        if (diffA < diffB) {
-            return 1;
-        }
-    
-        // 1-3. 종일 일정 우선
-        if (a.isAllDay) {
-            return -1;
-        }
-        if (b.isAllDay) {
-            return 1;
-        }
-    
-        // 1-4. 시작 시간이 이른 순서
-        const startTimeA = dayjs(`${a.startDate} ${a.startTime}`);
-        const startTimeB = dayjs(`${b.startDate} ${b.startTime}`);
-    
-        return startTimeA.diff(startTimeB);
-      };
-    
-    ```
-    </details>
-  
-    <details>
-      <summary>2. 데이터 전처리</summary> 
-      
-    ```javascript
-      // 여러 주에 걸친 일정들을 주 단위로 나누고 일정 표시에 필요한 인덱스값 추가
-      const preprocessData = schedule => {
-          let startDate = dayjs(schedule.startDate);
-          const endDate = dayjs(schedule.endDate);
-          const weeklySchedules = [];
-          let weekIndex = 1;
-  
-      // 여러 일의 일정들만 수행
-      if (schedule.startDate !== schedule.endDate) {
-          // 주를 나누기 위해 시작날짜부터 종료날짜까지 반복
-          while (startDate.isBefore(endDate) || startDate.isSame(endDate)) {
-              // 시작 날이 있는 주의 첫날과 끝날
-              const { startOfWeek, endOfWeek } = getWeekRange(startDate);
-  
-              // 주의 시작일이 해당 일정의 시작일 이전이면 시작일을 해당 일정의 시작일로 설정
-              const adjustedStartOfWeek = startDate.isAfter(startOfWeek) ? startDate : startOfWeek;
-              // 주의 종료일이 해당 일정의 종료일 이후이면 종료일을 해당 일정의 종료일로 설정
-              const adjustedEndOfWeek = endDate.isBefore(endOfWeek) ? endDate : endOfWeek;
-  
-              // 며칠짜리 일정인지 인덱스 부여하고 배열에 추가함
-              const dayDiff = adjustedEndOfWeek.diff(adjustedStartOfWeek, "day") + 1;
-              weeklySchedules.push({
-                  ...schedule,
-                  startDate: adjustedStartOfWeek.format("YYYY-MM-DD"),
-                  endDate: adjustedEndOfWeek.format("YYYY-MM-DD"),
-                  dayDiff,
-                  weekIndex,
-              });
-  
-              // startDate를 다음주의 첫 날로 변경
-              startDate = startOfWeek.add(1, "week");
-              weekIndex += 1;
-          }
-      } else {
-          // 당일 일정들 배열에 추가
-          weeklySchedules.push({ ...schedule, dayDiff: 0, weekIndex: 0 });
-      }
-      return weeklySchedules;
-      };
-    ```
-    </details>
-    
-    <details>
-      <summary>3. 데이터 분류 및 순서인덱스 부여 </summary> 
-      
+      <summary>3. 데이터 분류 및 순서인덱스 부여 </summary>
+
     ```javascript
         const getfilteredData = () => {
             const dateArray = getVisibleDates(currentDate); // 화면에 보여지는 42개의 날짜를 배열로 만듬
@@ -541,7 +576,7 @@
                     const scheduleEnd = dayjs(schedule.endDate);
                     let index = 1;
                     let isBetween = false;
-  
+
                     // 배열 맨 처음 인덱스에는 해당 날짜를 설정
                     if (returnData[i].length === 0) {
                         returnData[i].push({ date: dateArray[i].format("YYYY-MM-DD") });
@@ -563,8 +598,8 @@
                             }
                         });
                     }
-    
-                    // 결과 배열에 넣으며 순서인덱스 부여 및 보임여부 인덱스 부여(*모든 일정은 시작 날짜의 일정만 표시한다.) 
+
+                    // 결과 배열에 넣으며 순서인덱스 부여 및 보임여부 인덱스 부여(*모든 일정은 시작 날짜의 일정만 표시한다.)
                     if (schedule.dayDiff !== 0 && schedule.startDate === dateArray[i].format("YYYY-MM-DD")) {
                         returnData[i].push({ ...schedule, index, isBetween, uqKey });
                         // 2: 시작날짜를 초과, 종료날짜 이전 일정의 경우 보이지 않도록 함(*오직 순서 인덱스를 참고하기 위해 사용됨)
@@ -584,217 +619,220 @@
             });
             setFilteredData(returnData);
         };
-    ```
-    </details>
+    ````
 
-    <details>
-      <summary>4. 일정 표시 </summary> 
-      
-    ```javascript
-        const cellRender = date => {
-              const formattedDate = date.format("YYYY-MM-DD");
-              // 셀의 날짜와 같은 날짜인 결과값 배열만 찾아담음
-              const matchingDateArray = filteredData?.find(entry => entry[0] && entry[0].date === formattedDate);
-              if (matchingDateArray && Array.isArray(matchingDateArray)) {
-                  const maxIndex = matchingDateArray.length - 1;
-      
-                  return (
-                      <div css={SdateCellBox(customHeight)} onClick={e => handleContainerClick(e, date, matchingDateArray)}>
-                          <ul className="schedules">{matchingDateArray.map(schedule => renderSchedules(schedule, maxIndex))}</ul>
-                      </div>
-              );
-        }
-    
-       const renderSchedules = (schedule, maxIndex) => {
-            //유효하지 않은 값은 버림
-            if (schedule?.date) {
-                return null;
-            }
-            //사이에 낀 일정은 표시되지 않음
-            if (schedule?.isBetween) {
-                return (
-                    <div css={SEmptyBox(schedule?.index, visibleSchedulesNum)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-1`}>
-                        {schedule?.title}
-                    </div>
-                );
-            }
-            // 최대 가시 일정 개수보다 적으면 일반적인 표시
-            if (schedule?.index <= visibleSchedulesNum) {
-                return (
-                    <>
-                        <div css={SScheduleBox(schedule?.dayDiff, schedule?.isAllDay, schedule?.labelColor, schedule?.index, visibleSchedulesNum)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-2`}>
-                            {schedule?.isAllDay ? null : (
-                                <>
-                                    {schedule?.dayDiff === 0 && <Badge color={schedule?.labelColor} />}
-                                    <span css={STimeText}>{convertTo24HourFormat(schedule?.startTime)}</span>
-                                </>
-                            )}
-                            <li className={schedule?.scheduleId} css={SScheduleText(schedule?.labelColor, schedule?.isAllDay, schedule?.dayDiff)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-3`}>
-                                {schedule?.title}
-                            </li>
-                        </div>
-                    </>
-                );
-            }
-            // 최대 가시 일정 개수보다 많을 때 '...N개 더보기'
-            if (schedule?.index === visibleSchedulesNum + 1) {
-                return (
-                    <>
-                        <div css={SMoreText(schedule?.index)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-4`}>
-                            <p key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-5`}>{maxIndex - visibleSchedulesNum}개 더보기</p>
-                        </div>
-                    </>
-                );
-            }
-        };
-    
-    ```
-    </details>
-    
-- '오늘' '다음 월' '이전 월' 버튼과 연도 드롭다운을 통해 편리하게 원하는 월로 이동할 수 있습니다.
--  해상도가 16:9 환경에서는 5행(6주인 월에는 6행), 16:10 환경에서는 6행의 캘린더를 보여주고, 셀의 height값에 맞게 일정이 표시됩니다.
+      </details>
+
       <details>
-        <summary>Code Review</summary> 
+        <summary>4. 일정 표시 </summary> 
         
       ```javascript
-      // 화면 비율에따라 5행 / 6행 다르게 표시
-      const useDynamicHeight = date => {
-          const defaultHeight = 133; //FHD 크롬 기준
-          const [customHeight, setCustomHeight] = useState(defaultHeight);
-          const [rowNumber, setRowNumber] = useState(5);
+          const cellRender = date => {
+                const formattedDate = date.format("YYYY-MM-DD");
+                // 셀의 날짜와 같은 날짜인 결과값 배열만 찾아담음
+                const matchingDateArray = filteredData?.find(entry => entry[0] && entry[0].date === formattedDate);
+                if (matchingDateArray && Array.isArray(matchingDateArray)) {
+                    const maxIndex = matchingDateArray.length - 1;
+        
+                    return (
+                        <div css={SdateCellBox(customHeight)} onClick={e => handleContainerClick(e, date, matchingDateArray)}>
+                            <ul className="schedules">{matchingDateArray.map(schedule => renderSchedules(schedule, maxIndex))}</ul>
+                        </div>
+                );
+          }
       
-          const updateDynamicHeight = () => {
-              const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
-              const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
-              let calculatedHeight;
-              const viewportRatio = viewportWidth / viewportHeight;
-      
-              if (viewportRatio <= 1.9) {
-                  calculatedHeight = (viewportHeight - 265) / 6;
-                  setRowNumber(6);
-              } else {
-                  calculatedHeight = (viewportHeight - 240) / 5;
-                  setRowNumber(5);
+         const renderSchedules = (schedule, maxIndex) => {
+              //유효하지 않은 값은 버림
+              if (schedule?.date) {
+                  return null;
               }
-              // 만약 해당 월이 6주짜리 월이라면 반드시 6행으로 표시(ex. 1일:토요일, 31일:화요일)
-              if (getWeekCount(date) === 6) {
-                  calculatedHeight = (viewportHeight - 268) / 6;
-                  setRowNumber(6);
+              //사이에 낀 일정은 표시되지 않음
+              if (schedule?.isBetween) {
+                  return (
+                      <div css={SEmptyBox(schedule?.index, visibleSchedulesNum)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-1`}>
+                          {schedule?.title}
+                      </div>
+                  );
               }
-              setCustomHeight(calculatedHeight);
+              // 최대 가시 일정 개수보다 적으면 일반적인 표시
+              if (schedule?.index <= visibleSchedulesNum) {
+                  return (
+                      <>
+                          <div css={SScheduleBox(schedule?.dayDiff, schedule?.isAllDay, schedule?.labelColor, schedule?.index, visibleSchedulesNum)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-2`}>
+                              {schedule?.isAllDay ? null : (
+                                  <>
+                                      {schedule?.dayDiff === 0 && <Badge color={schedule?.labelColor} />}
+                                      <span css={STimeText}>{convertTo24HourFormat(schedule?.startTime)}</span>
+                                  </>
+                              )}
+                              <li className={schedule?.scheduleId} css={SScheduleText(schedule?.labelColor, schedule?.isAllDay, schedule?.dayDiff)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-3`}>
+                                  {schedule?.title}
+                              </li>
+                          </div>
+                      </>
+                  );
+              }
+              // 최대 가시 일정 개수보다 많을 때 '...N개 더보기'
+              if (schedule?.index === visibleSchedulesNum + 1) {
+                  return (
+                      <>
+                          <div css={SMoreText(schedule?.index)} key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-4`}>
+                              <p key={`${schedule?.scheduleId}-${schedule?.weekIndex}-${schedule?.uqKey}-5`}>{maxIndex - visibleSchedulesNum}개 더보기</p>
+                          </div>
+                      </>
+                  );
+              }
           };
-    
-          //화면 크기 조정시 작동
-          useEffect(() => {
-              window.addEventListener("resize", updateDynamicHeight);
-              updateDynamicHeight();
       
-              return () => {
-                  window.removeEventListener("resize", updateDynamicHeight);
-              };
-          }, []);
-    
-          //날짜 변경시 작동
-          useEffect(() => {
-              updateDynamicHeight();
-          }, [date]);
-    
-          return { customHeight, rowNumber };
-      };
       ```
       </details>
--  한 날짜에 모든 일정을 보여주지 못할 경우 'n개 더보기'를 표시하고, 해당 날짜의 전체 일정을 확인할 수 있는 모달창을 띄어줍니다.
+
+
+-   '오늘' '다음 월' '이전 월' 버튼과 연도 드롭다운을 통해 편리하게 원하는 월로 이동할 수 있습니다.
+-   해상도가 16:9 환경에서는 5행(6주인 월에는 6행), 16:10 환경에서는 6행의 캘린더를 보여주고, 셀의 height값에 맞게 일정이 표시됩니다.
+       <details>
+         <summary>Code Review</summary> 
+         
+       ```javascript
+       // 화면 비율에따라 5행 / 6행 다르게 표시
+       const useDynamicHeight = date => {
+           const defaultHeight = 133; //FHD 크롬 기준
+           const [customHeight, setCustomHeight] = useState(defaultHeight);
+           const [rowNumber, setRowNumber] = useState(5);
+       
+           const updateDynamicHeight = () => {
+               const viewportWidth = window.innerWidth || document.documentElement.clientWidth;
+               const viewportHeight = window.innerHeight || document.documentElement.clientHeight;
+               let calculatedHeight;
+               const viewportRatio = viewportWidth / viewportHeight;
+       
+               if (viewportRatio <= 1.9) {
+                   calculatedHeight = (viewportHeight - 265) / 6;
+                   setRowNumber(6);
+               } else {
+                   calculatedHeight = (viewportHeight - 240) / 5;
+                   setRowNumber(5);
+               }
+               // 만약 해당 월이 6주짜리 월이라면 반드시 6행으로 표시(ex. 1일:토요일, 31일:화요일)
+               if (getWeekCount(date) === 6) {
+                   calculatedHeight = (viewportHeight - 268) / 6;
+                   setRowNumber(6);
+               }
+               setCustomHeight(calculatedHeight);
+           };
+     
+           //화면 크기 조정시 작동
+           useEffect(() => {
+               window.addEventListener("resize", updateDynamicHeight);
+               updateDynamicHeight();
+       
+               return () => {
+                   window.removeEventListener("resize", updateDynamicHeight);
+               };
+           }, []);
+     
+           //날짜 변경시 작동
+           useEffect(() => {
+               updateDynamicHeight();
+           }, [date]);
+     
+           return { customHeight, rowNumber };
+       };
+       ```
+       </details>
+-   한 날짜에 모든 일정을 보여주지 못할 경우 'n개 더보기'를 표시하고, 해당 날짜의 전체 일정을 확인할 수 있는 모달창을 띄어줍니다.
 <!-- 추가 GIF -->
-- '일정 추가' 버튼 또는 일정 셀을 클릭해 클릭한 날짜에 일정을 추가할 수 있습니다.
-- 반복 주기(5가지)와 종료일 또는 종료 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
-   <details>
-        <summary>Code Review</summary> 
+-   '일정 추가' 버튼 또는 일정 셀을 클릭해 클릭한 날짜에 일정을 추가할 수 있습니다.
+-   반복 주기(5가지)와 종료일 또는 종료 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
+     <details>
+          <summary>Code Review</summary>
 
-    <details>
-      <summary>1. service</summary> 
-        
-    ```java
-    @Transactional(rollbackFor = Exception.class)
-    public boolean addSchedule(ScheduleReqDto scheduleReqDto) {
-        ScheduleEntity scheduleEntity = scheduleReqDto.toEntity();
+      <details>
+        <summary>1. service</summary> 
+          
+      ```java
+      @Transactional(rollbackFor = Exception.class)
+      public boolean addSchedule(ScheduleReqDto scheduleReqDto) {
+          ScheduleEntity scheduleEntity = scheduleReqDto.toEntity();
 
-        String repeatType = scheduleReqDto.getRepeatCycle();
-        String repeatEndType = scheduleReqDto.getRepeatType();
-        int repeatCount = scheduleReqDto.getRepeatCount();
-        int repeatLimitYear = 5;
-        switch (repeatType) {
-            case "":
-                return calendarRepeatUtil.addSchedule(scheduleReqDto);
-            // 매월 반복인경우
-            case "month":
-                switch (repeatEndType) {
-                    case "none":
-                        repeatCount = 12 * repeatLimitYear;
-                        return calendarRepeatUtil.monthRepeatCount(scheduleReqDto, repeatCount);
-                    case "count":
-                        repeatCount = scheduleReqDto.getRepeatCount();
-                        return calendarRepeatUtil.monthRepeatCount(scheduleReqDto, repeatCount);
-                    case "date":
-                        String repeatEndDate = scheduleReqDto.getRepeatEndDate();
-                        LocalDate repeatEndDateObj = LocalDate.parse(repeatEndDate, DateTimeFormatter.ISO_LOCAL_DATE);
-                        return calendarRepeatUtil.monthRepeatDate(scheduleReqDto);
-                    default: return false;
-                }
-            // 매년 반복인 경우 
-            case "year":
-                switch (repeatEndType) {
-                    case "none":
-                        repeatCount = repeatLimitYear;
-                        return calendarRepeatUtil.yearRepeatCount(scheduleReqDto, repeatCount);
-                    case "count":
-                        return calendarRepeatUtil.yearRepeatCount(scheduleReqDto, repeatCount);
-                    case "date":
-                        return calendarRepeatUtil.yearRepeatDate(scheduleReqDto);
-                    default: return false;
+          String repeatType = scheduleReqDto.getRepeatCycle();
+          String repeatEndType = scheduleReqDto.getRepeatType();
+          int repeatCount = scheduleReqDto.getRepeatCount();
+          int repeatLimitYear = 5;
+          switch (repeatType) {
+              case "":
+                  return calendarRepeatUtil.addSchedule(scheduleReqDto);
+              // 매월 반복인경우
+              case "month":
+                  switch (repeatEndType) {
+                      case "none":
+                          repeatCount = 12 * repeatLimitYear;
+                          return calendarRepeatUtil.monthRepeatCount(scheduleReqDto, repeatCount);
+                      case "count":
+                          repeatCount = scheduleReqDto.getRepeatCount();
+                          return calendarRepeatUtil.monthRepeatCount(scheduleReqDto, repeatCount);
+                      case "date":
+                          String repeatEndDate = scheduleReqDto.getRepeatEndDate();
+                          LocalDate repeatEndDateObj = LocalDate.parse(repeatEndDate, DateTimeFormatter.ISO_LOCAL_DATE);
+                          return calendarRepeatUtil.monthRepeatDate(scheduleReqDto);
+                      default: return false;
+                  }
+              // 매년 반복인 경우
+              case "year":
+                  switch (repeatEndType) {
+                      case "none":
+                          repeatCount = repeatLimitYear;
+                          return calendarRepeatUtil.yearRepeatCount(scheduleReqDto, repeatCount);
+                      case "count":
+                          return calendarRepeatUtil.yearRepeatCount(scheduleReqDto, repeatCount);
+                      case "date":
+                          return calendarRepeatUtil.yearRepeatDate(scheduleReqDto);
+                      default: return false;
 
-                }
-                // 반복주기가 숫자인 경우(매일/매주/n일)
-                default:
-                    switch (repeatType) {
-                        case "day":
-                            repeatType = "1";
-                            break;
-                        case "week":
-                            repeatType = "7";
-                            break;
-                        default:
-                            break;
-                    }
-                    int repeatCycle = Integer.parseInt(repeatType);
+                  }
+                  // 반복주기가 숫자인 경우(매일/매주/n일)
+                  default:
+                      switch (repeatType) {
+                          case "day":
+                              repeatType = "1";
+                              break;
+                          case "week":
+                              repeatType = "7";
+                              break;
+                          default:
+                              break;
+                      }
+                      int repeatCycle = Integer.parseInt(repeatType);
 
-                    switch (repeatEndType) {
-                        case "none":
-                            String startDate = scheduleReqDto.getStartDate();
-                            LocalDate startDateObj = LocalDate.parse(startDate, DateTimeFormatter.ISO_LOCAL_DATE);
-                            LocalDate lastDate = startDateObj.plusYears(repeatLimitYear);
-                            return calendarRepeatUtil.dayRepeatDate(scheduleReqDto, lastDate, repeatCycle);
+                      switch (repeatEndType) {
+                          case "none":
+                              String startDate = scheduleReqDto.getStartDate();
+                              LocalDate startDateObj = LocalDate.parse(startDate, DateTimeFormatter.ISO_LOCAL_DATE);
+                              LocalDate lastDate = startDateObj.plusYears(repeatLimitYear);
+                              return calendarRepeatUtil.dayRepeatDate(scheduleReqDto, lastDate, repeatCycle);
 
-                        case "date":
-                            String repeatEndDate = scheduleReqDto.getRepeatEndDate();
-                            LocalDate repeatEndDateObj = LocalDate.parse(repeatEndDate, DateTimeFormatter.ISO_LOCAL_DATE);
-                            return calendarRepeatUtil.dayRepeatDate(scheduleReqDto, repeatEndDateObj, repeatCycle);
+                          case "date":
+                              String repeatEndDate = scheduleReqDto.getRepeatEndDate();
+                              LocalDate repeatEndDateObj = LocalDate.parse(repeatEndDate, DateTimeFormatter.ISO_LOCAL_DATE);
+                              return calendarRepeatUtil.dayRepeatDate(scheduleReqDto, repeatEndDateObj, repeatCycle);
 
-                        case "count":
-                            return calendarRepeatUtil.dayRepeatCount(scheduleReqDto, repeatCount, repeatCycle);
-                        default: return false;
-                    }
-                }
-            }
-      }
-    ```
-    
+                          case "count":
+                              return calendarRepeatUtil.dayRepeatCount(scheduleReqDto, repeatCount, repeatCycle);
+                          default: return false;
+                      }
+                  }
+              }
+        }
+
+    ````
+
     </details>
         <details>
-      <summary>2. CalendarRepeatUtil</summary> 
-        
+      <summary>2. CalendarRepeatUtil</summary>
+
     ```java
     public class CalendarRepeatUtil {
-    
+
         private final CalendarMapper calendarMapper;
           //참석자가 있는 경우
         private boolean processScheduleWithAttendees(ScheduleEntity scheduleEntity, ScheduleReqDto scheduleReqDto) {
@@ -804,7 +842,7 @@
             map.put("userIdList", scheduleReqDto.getAttendee());
             return calendarMapper.insertAttendee(map) > 0;
         }
-    
+
         // 메서드에서 사용할 조건을 분리하고 메서드 호출로 대체
         public boolean addSchedule(ScheduleReqDto scheduleReqDto) {
             ScheduleEntity scheduleEntity = scheduleReqDto.toEntity();
@@ -815,19 +853,19 @@
                 return calendarMapper.insertSchedule(scheduleEntity) > 0;
             }
         }
-    
+
         // 참석자가 있는지 여부를 확인
         private boolean hasAttendees(ScheduleReqDto scheduleReqDto) {
             return scheduleReqDto.getAttendee() != null && scheduleReqDto.getAttendee().toArray().length > 0;
         }
-    
+
         // 월 + 특정횟수 반복
         public boolean monthRepeatCount(ScheduleReqDto scheduleReqDto, int repeatCount) {
             String startDate = scheduleReqDto.getStartDate();
             LocalDate startDateObj = LocalDate.parse(startDate, DateTimeFormatter.ISO_LOCAL_DATE);
             String endDate = scheduleReqDto.getEndDate();
             LocalDate endDateObj = LocalDate.parse(endDate, DateTimeFormatter.ISO_LOCAL_DATE);
-    
+
             for(int i=0; i < repeatCount; i++ ) {
                 LocalDate addYearStartDate = startDateObj.plusMonths(i);
                 scheduleReqDto.setStartDate(addYearStartDate.toString());
@@ -845,7 +883,7 @@
             LocalDate endDateObj = LocalDate.parse(endDate, DateTimeFormatter.ISO_LOCAL_DATE);
             String repeatEndDate = scheduleReqDto.getRepeatEndDate();
             LocalDate repeatEndDateObj = LocalDate.parse(repeatEndDate, DateTimeFormatter.ISO_LOCAL_DATE);
-    
+
             int i = 0;
             do {
                 startDateObj = startDateObj.plusMonths(i);
@@ -858,100 +896,103 @@
             return true;
         }
           ...나머지 method생략
-    ```
-    </details>
+    ````
 
-    <details>
-      <summary>3. Mapper.xml</summary> 
-        
-    ```java
-    <resultMap id="CalendarSchedule" type="com.memorious.back.entity.CalendarScheduleEntity">
-        <id property="scheduleId" column="calendar_schedule_id" />
-        <result property="userId" column="user_id"/>
-        <result property="title" column="title"/>
-        <result property="labelColor" column="label_color"/>
-        <result property="startDate" column="start_date"/>
-        <result property="endDate" column="end_date"/>
-        <result property="isAllDay" column="is_all_day"/>
-        <result property="startTime" column="start_time"/>
-        <result property="endTime" column="end_time"/>
-        <result property="location" column="location"/>
-        <result property="repeatType" column="repeat_type"/>
-        <result property="repeatCycle" column="repeat_cycle"/>
-        <result property="repeatEndDate" column="repeat_end_date"/>
-        <result property="repeatCount" column="repeat_count"/>
-        <result property="description" column="description"/>
-        <result property="nickname" column="nickname"/>
-        <collection property="attendees" javaType="list" resultMap="CalendarAttendeeResultMap" />
-    </resultMap>
+      </details>
 
-    <resultMap id="CalendarAttendeeResultMap" type="com.memorious.back.entity.CalendarAttendeeEntity">
-        <id property="attendeeId" column="attendee_user_id"/>
-        <result property="attendeeNickName" column="attendee_nickname"/>
-    </resultMap>
+      <details>
+        <summary>3. Mapper.xml</summary> 
+          
+      ```java
+      <resultMap id="CalendarSchedule" type="com.memorious.back.entity.CalendarScheduleEntity">
+          <id property="scheduleId" column="calendar_schedule_id" />
+          <result property="userId" column="user_id"/>
+          <result property="title" column="title"/>
+          <result property="labelColor" column="label_color"/>
+          <result property="startDate" column="start_date"/>
+          <result property="endDate" column="end_date"/>
+          <result property="isAllDay" column="is_all_day"/>
+          <result property="startTime" column="start_time"/>
+          <result property="endTime" column="end_time"/>
+          <result property="location" column="location"/>
+          <result property="repeatType" column="repeat_type"/>
+          <result property="repeatCycle" column="repeat_cycle"/>
+          <result property="repeatEndDate" column="repeat_end_date"/>
+          <result property="repeatCount" column="repeat_count"/>
+          <result property="description" column="description"/>
+          <result property="nickname" column="nickname"/>
+          <collection property="attendees" javaType="list" resultMap="CalendarAttendeeResultMap" />
+      </resultMap>
+
+      <resultMap id="CalendarAttendeeResultMap" type="com.memorious.back.entity.CalendarAttendeeEntity">
+          <id property="attendeeId" column="attendee_user_id"/>
+          <result property="attendeeNickName" column="attendee_nickname"/>
+      </resultMap>
 
     <insert id="insertSchedule"
-            useGeneratedKeys="true"
-            keyProperty="calendarScheduleId"
-            parameterType="com.memorious.back.entity.ScheduleEntity">
-        INSERT INTO calendar_schedule_tb (
-            calendar_schedule_id,
-            user_id,
-            title,
-            label_color,
-            start_date,
-            end_date,
-            is_all_day,
-            start_time,
-            end_time,
-            location,
-            repeat_type,
-            repeat_cycle,
-            repeat_end_date,
-            repeat_count,
-            description
-        )
-        VALUES (
-            0,
-            #{userId},
-            #{title},
-            #{labelColor},
-            #{startDate},
-            #{endDate},
-            #{isAllDay},
-            #{startTime},
-            #{endTime},
-            #{location},
-            #{repeatType},
-            #{repeatCycle},
-            #{repeatEndDate},
-            #{repeatCount},
-            #{description}
-        )
+              useGeneratedKeys="true"
+              keyProperty="calendarScheduleId"
+              parameterType="com.memorious.back.entity.ScheduleEntity">
+    INSERT INTO calendar_schedule_tb (
+    calendar_schedule_id,
+    user_id,
+    title,
+    label_color,
+    start_date,
+    end_date,
+    is_all_day,
+    start_time,
+    end_time,
+    location,
+    repeat_type,
+    repeat_cycle,
+    repeat_end_date,
+    repeat_count,
+    description
+    )
+    VALUES (
+    0,
+    #{userId},
+    #{title},
+    #{labelColor},
+    #{startDate},
+    #{endDate},
+    #{isAllDay},
+    #{startTime},
+    #{endTime},
+    #{location},
+    #{repeatType},
+    #{repeatCycle},
+    #{repeatEndDate},
+    #{repeatCount},
+    #{description}
+    )
     </insert>
 
-    <insert id="insertAttendee" parameterType="hashmap">
-        insert into calendar_attendee_tb
-        values
-        <foreach collection="userIdList" item="userId" separator=",">
-            (0, #{calendarScheduleId}, #{userId})
-        </foreach>
-    </insert>
-    ```
-    </details>
-    
+      <insert id="insertAttendee" parameterType="hashmap">
+          insert into calendar_attendee_tb
+          values
+          <foreach collection="userIdList" item="userId" separator=",">
+              (0, #{calendarScheduleId}, #{userId})
+          </foreach>
+      </insert>
+      ```
+      </details>
+
+
 <!-- 상세조회 / 수정 / 삭제 GIF -->
-- 등록된 일정을 클릭하면 세부 내용을 확인하고, 수정 또는 삭제할 수 있습니다.
+
+-   등록된 일정을 클릭하면 세부 내용을 확인하고, 수정 또는 삭제할 수 있습니다.
 
 ### 메모
-- 포스트잇과 비슷한 형태의 메모를 작성할 수 있습니다.
-- 최신 일정순으로 정렬되며 무한스크롤을 지원합니다.
-- 작성자 본인만이 메모를 수정하거나 삭제 할 수 있습니다.
-- 내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로운 메모를 조회할 수 있습니다.
 
-
+-   포스트잇과 비슷한 형태의 메모를 작성할 수 있습니다.
+-   최신 일정순으로 정렬되며 무한스크롤을 지원합니다.
+-   작성자 본인만이 메모를 수정하거나 삭제 할 수 있습니다.
+-   내용에 포함된 키워드로 검색할 수 있으며 새로고침 버튼을 통해 새로운 메모를 조회할 수 있습니다.
 
 ### 게시판
+
 <div>
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5ef99699-3497-4486-8bcf-bfa0c66f7528" width=70%>
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/2d9e78ad-f5c5-4708-839c-9199dca303ad" width=70%>
@@ -959,64 +1000,68 @@
 
 </div>
 
-- 가족 구성원이 회의록, 식단, 건의사항 등 카테고리를 지정하고 사진과 글을 포스팅할 수 있는 기능입니다.
-- 전체 글 목록이 게시판 형태로 표시됩니다.
-- 카테고리별로 게시글을 조회할 수 있고, 또한 검색 범위와 입력한 검색어에 따른 검색이 가능합니다.
+-   가족 구성원이 회의록, 식단, 건의사항 등 카테고리를 지정하고 사진과 글을 포스팅할 수 있는 기능입니다.
+-   전체 글 목록이 게시판 형태로 표시됩니다.
+-   카테고리별로 게시글을 조회할 수 있고, 또한 검색 범위와 입력한 검색어에 따른 검색이 가능합니다.
 
-  <details>
-    <summary>Code Review</summary>
-    
-	 #### Front-End
-	```javascript
-      const fetchData = async () => {
-      };
-    ```
-   (코드 설명)
+    <details>
+      <summary>Code Review</summary>
+      
+     #### Front-End
+    ```javascript
+        const fetchData = async () => {
+        };
+      ```
+     (코드 설명)
 
-	#### Back-End
-	```java
-    public class BootSpringBootApplication {
-      public static void main(String[] args) {
-        System.out.println("Sample");
+    #### Back-End
+
+    ```java
+      public class BootSpringBootApplication {
+        public static void main(String[] args) {
+          System.out.println("Sample");
+        }
       }
-    }
     ```
+
     (코드 설명)
-  </details>
+    </details>
 
 ### 건강 차트
-- 혈당, 걸음수, 맥박 데이터를 그래프로 직관적으로 표시합니다.
-- 사이드바에서 인원별, 기간별(1, 3, 6개월) 필터링을 지원합니다.
-- 입력페이지에서 데이터를 손쉽게 추가 및 수정(모달)할 수 있습니다.
 
+-   혈당, 걸음수, 맥박 데이터를 그래프로 직관적으로 표시합니다.
+-   사이드바에서 인원별, 기간별(1, 3, 6개월) 필터링을 지원합니다.
+-   입력페이지에서 데이터를 손쉽게 추가 및 수정(모달)할 수 있습니다.
 
 ### 그 외
-- 사이드바 하단에서 프로필 사진을 클릭해 변경할 수 있습니다.
-  
-<p align="right"><a href="#목차">목차 🔼</a></p>
 
+-   사이드바 하단에서 프로필 사진을 클릭해 변경할 수 있습니다.
+
+<p align="right"><a href="#목차">목차 🔼</a></p>
 
 ## 느낀 점
+
 ### 주성광
-- (협업에 대하여) 팀 프로젝트는 개인 프로젝트와 많은 부분에서 다르다는 것을 크게 느꼈다. 우리 조는 효율성을 중시해 메인 기능을 기준으로 철저한 분업을 꾀했다. 철저한 분업은 맡은 기능에 대한 전문성을 강화하고 책임감과 의욕을 고취하는 데 큰 장점이 있었지만 팀원 간 소통의 필요성을 잊게했다. 소통의 부족은 코드 리뷰를 하거나 피드백을 주고받는 지식 공유의 시간을 감소시켰고 이는 협업에서의 가장 큰 장점인 집단지성을 활용하지 못하는 결과를 낳았다.
 
-   주기적인 미팅과 코드 리뷰와 같은 협업 시스템 내지 협업 규칙의 중요성, 그리고 비록 사소해 보이는 루틴일지라도 개개인이 이러한 체계를 지키려는 노력이 정말 중요하다는 것을 깨닫게 되었다. 또한 역할분담 내지 개발론과 같은 협업 방식을 채택할 때에는 프로젝트의 목적 및 규모, 팀원의 역량 및 경험 등을 종합적으로 고려해야 하고, 채택 후에는 채택한 방식의 리스크를 최소화 할 수 있는 시스템을 반드시 마련해야 함을 느꼈다. 
+-   (협업에 대하여) 팀 프로젝트는 개인 프로젝트와 많은 부분에서 다르다는 것을 크게 느꼈다. 우리 조는 효율성을 중시해 메인 기능을 기준으로 철저한 분업을 꾀했다. 철저한 분업은 맡은 기능에 대한 전문성을 강화하고 책임감과 의욕을 고취하는 데 큰 장점이 있었지만 팀원 간 소통의 필요성을 잊게했다. 소통의 부족은 코드 리뷰를 하거나 피드백을 주고받는 지식 공유의 시간을 감소시켰고 이는 협업에서의 가장 큰 장점인 집단지성을 활용하지 못하는 결과를 낳았다.
 
-- (개발 전반) 하나의 프로젝트를 기획부터 개발까지 직접 경험함으로써 기획자, 디자이너, 그리고 프론트엔드와 백엔드 각각의 역할과 그 중요성을 경험했다. 프론트 단과 백엔드 단 어디에서나 처리할 수 있는 문제이더라도 어디서 처리하는것이 적절한지를 고민하는 과정을 통해 각 파트의 역할을 다시 한번 생각해 볼 수 있었다. 또한 프론트에서는 사용자 중심의 웹을 기획하고 구현하는 것을, 백에서는 성능과 클린코드를 어떻게 함께 잡을지에 대해 고민하며 개발의 다양한 측면과 개발 흐름을 명확히 이해할 수 있었다.
+    주기적인 미팅과 코드 리뷰와 같은 협업 시스템 내지 협업 규칙의 중요성, 그리고 비록 사소해 보이는 루틴일지라도 개개인이 이러한 체계를 지키려는 노력이 정말 중요하다는 것을 깨닫게 되었다. 또한 역할분담 내지 개발론과 같은 협업 방식을 채택할 때에는 프로젝트의 목적 및 규모, 팀원의 역량 및 경험 등을 종합적으로 고려해야 하고, 채택 후에는 채택한 방식의 리스크를 최소화 할 수 있는 시스템을 반드시 마련해야 함을 느꼈다.
 
-  이러한 경험을 통해 주니어 개발자로서의 향후 학습 방향을 잡을 수 있었다. 한편, 백엔드 과정의 최종 프로젝트라는 성격을 고려할 때, 사용자 중심적인 웹을 구현하겠다는 욕심에 퍼블리싱과 프론트엔드 부분에 많은 시간을 써 추가 기능으로 생각했던 알림 기능, 공공데이터 공휴일 API 기능, 커뮤니티 기능 등을 통해 백엔드를 충분히 연습하지 못해 아쉽다. jwt, oAuth, 기타 CRUD, 알림 기능 등 연습하지 못한 부분은 별도의 프로젝트로 보충해야할 필요성을 느낀다. 
+-   (개발 전반) 하나의 프로젝트를 기획부터 개발까지 직접 경험함으로써 기획자, 디자이너, 그리고 프론트엔드와 백엔드 각각의 역할과 그 중요성을 경험했다. 프론트 단과 백엔드 단 어디에서나 처리할 수 있는 문제이더라도 어디서 처리하는것이 적절한지를 고민하는 과정을 통해 각 파트의 역할을 다시 한번 생각해 볼 수 있었다. 또한 프론트에서는 사용자 중심의 웹을 기획하고 구현하는 것을, 백에서는 성능과 클린코드를 어떻게 함께 잡을지에 대해 고민하며 개발의 다양한 측면과 개발 흐름을 명확히 이해할 수 있었다.
 
-- (FE) 이제껏 수업에서는 배우지 않았던 여러 라이브러리(Eslint, AntD, DayJS, StyledComponents)를 도입했다. 요구사항에 맞게 새로운 기술을 응용해 사용하기가 쉽지는 않았지만, 새로운 기술을 습득하는 과정이 흥미로웠고 완성도 높은 라이브러리를 사용함으로서 프로젝트의 퀄리티도 높아짐에 따라 성취감을 느낄 수 있었다.
+    이러한 경험을 통해 주니어 개발자로서의 향후 학습 방향을 잡을 수 있었다. 한편, 백엔드 과정의 최종 프로젝트라는 성격을 고려할 때, 사용자 중심적인 웹을 구현하겠다는 욕심에 퍼블리싱과 프론트엔드 부분에 많은 시간을 써 추가 기능으로 생각했던 알림 기능, 공공데이터 공휴일 API 기능, 커뮤니티 기능 등을 통해 백엔드를 충분히 연습하지 못해 아쉽다. jwt, oAuth, 기타 CRUD, 알림 기능 등 연습하지 못한 부분은 별도의 프로젝트로 보충해야할 필요성을 느낀다.
 
-  한편, 캘린더 기능은 보기와 달리 더더욱 쉽지 않았다. 특히 일정을 여타 캘린더 앱처럼 일정한 순서와 규칙에 맞게 표시하는 것은 불가능한 문제로 느껴졌다. 마음을 다잡고 직면한 문제와 요구사항에 대해 차분히 고민하며 해결 로직을 단계별로 정리했고, 이에 필요한 함수와 기능을 학습한 후 정리한 로직을 코드로 옮겨내는 데 성공했다. 이런 경험을 통해 포기하지 않으면 어떤 문제라도 반드시 해결할 수 있다는 믿음과 자신감을 얻게 되었다.
+-   (FE) 이제껏 수업에서는 배우지 않았던 여러 라이브러리(Eslint, AntD, DayJS, StyledComponents)를 도입했다. 요구사항에 맞게 새로운 기술을 응용해 사용하기가 쉽지는 않았지만, 새로운 기술을 습득하는 과정이 흥미로웠고 완성도 높은 라이브러리를 사용함으로서 프로젝트의 퀄리티도 높아짐에 따라 성취감을 느낄 수 있었다.
 
-- (BE) 캘린더의 일정 반복 추가 기능을 구현하는 것이 가장 복잡한 작업이었다. 16가지 경우의수를 처리해야 했는데, 각각의 경우의수를 따져보며 9가지 경우를 정의하고 6가지의 메서드를 실행하는 방식으로 구현했다. 서비스단 코드의 가독성과 CSR을 고려해 클래스를 분리하고 코드의 재사용성을 높이는 등 많은 노력을 한 결과이지만 중첩 switch 문을 사용했기에 가독성이 떨어지는 아쉬움이 있다. 또한 '매일' 반복일 경우 한 번에 3,650 개의 데이터가 DB에 추가되며 성능 문제가 발생했다. OOP에 대한 이해와 개발 언어 및 SQL의 기본기, 클린코드, 알고리즘과 자료구조 등 CS 공부가 필수적임을 깨닫게 되었다. 기획단계에서 철저히 DB 설계를 한 덕분에 개발단계에서 DB 관련한 애로사항이나 변경사항이 없었던 점은 다행이였다. 
-  
+    한편, 캘린더 기능은 보기와 달리 더더욱 쉽지 않았다. 특히 일정을 여타 캘린더 앱처럼 일정한 순서와 규칙에 맞게 표시하는 것은 불가능한 문제로 느껴졌다. 마음을 다잡고 직면한 문제와 요구사항에 대해 차분히 고민하며 해결 로직을 단계별로 정리했고, 이에 필요한 함수와 기능을 학습한 후 정리한 로직을 코드로 옮겨내는 데 성공했다. 이런 경험을 통해 포기하지 않으면 어떤 문제라도 반드시 해결할 수 있다는 믿음과 자신감을 얻게 되었다.
+
+-   (BE) 캘린더의 일정 반복 추가 기능을 구현하는 것이 가장 복잡한 작업이었다. 16가지 경우의수를 처리해야 했는데, 각각의 경우의수를 따져보며 9가지 경우를 정의하고 6가지의 메서드를 실행하는 방식으로 구현했다. 서비스단 코드의 가독성과 CSR을 고려해 클래스를 분리하고 코드의 재사용성을 높이는 등 많은 노력을 한 결과이지만 중첩 switch 문을 사용했기에 가독성이 떨어지는 아쉬움이 있다. 또한 '매일' 반복일 경우 한 번에 3,650 개의 데이터가 DB에 추가되며 성능 문제가 발생했다. OOP에 대한 이해와 개발 언어 및 SQL의 기본기, 클린코드, 알고리즘과 자료구조 등 CS 공부가 필수적임을 깨닫게 되었다. 기획단계에서 철저히 DB 설계를 한 덕분에 개발단계에서 DB 관련한 애로사항이나 변경사항이 없었던 점은 다행이였다.
+
 ### 우주영
-- 프로젝트를 진행하면서 문서 작업을 통한 프로젝트의 체계화, Git을 통한 형상 관리, 코드 리뷰 등을 통해 협업에 있어 좋은 경험이 되었습니다.
-- 수업을 들었을 땐 잘 이해가 되지 않았던 JWT, Security, OAuth2 소셜 로그인 관련 기능을 직접 맡아 구현해보면서 이해도를 높이는데 큰 도움이 되었습니다.
-- 외부 라이브러리의 도큐먼트를 찾아보며 우리 프로젝트에 적용시키는 부분에서 어려움이 많았는데, 오래 걸리더라도 직접 찾아서 적용해보면서 스스로 문제를 해결하는 능력을 기를 수 있어 좋았습니다.
-- 팀원 간 견해 차이로 인한 팀 분위기 상 소통이 부족했음을 인지하였고, 소통의 중요성을 깨달았습니다. 다음 팀 프로젝트에서는 더욱 적극적으로 소통하기 위해 팀원 모두의 합의점을 찾아가는 등의 노력이 필요함을 느꼈습니다.
+
+-   프로젝트를 진행하면서 문서 작업을 통한 프로젝트의 체계화, Git을 통한 형상 관리, 코드 리뷰 등을 통해 협업에 있어 좋은 경험이 되었습니다.
+-   수업을 들었을 땐 잘 이해가 되지 않았던 JWT, Security, OAuth2 소셜 로그인 관련 기능을 직접 맡아 구현해보면서 이해도를 높이는데 큰 도움이 되었습니다.
+-   외부 라이브러리의 도큐먼트를 찾아보며 우리 프로젝트에 적용시키는 부분에서 어려움이 많았는데, 오래 걸리더라도 직접 찾아서 적용해보면서 스스로 문제를 해결하는 능력을 기를 수 있어 좋았습니다.
+-   팀원 간 견해 차이로 인한 팀 분위기 상 소통이 부족했음을 인지하였고, 소통의 중요성을 깨달았습니다. 다음 팀 프로젝트에서는 더욱 적극적으로 소통하기 위해 팀원 모두의 합의점을 찾아가는 등의 노력이 필요함을 느꼈습니다.
 
 <p align="right"><a href="#목차">목차 🔼</a></p>
-  
