@@ -1,6 +1,8 @@
 
 [Memorious 바로가기](http://memorious-korit.s3-website.ap-northeast-2.amazonaws.com/)
 
+[시연 영상 바로가기](https://www.youtube.com/channel/UCu41Ln5jEMnP0MjRCJBtICw)
+
 <div align="center">
 
 # Memorious - 우리 가족만을 위한 플랫폼
@@ -290,6 +292,11 @@
  
 
 ### 가족 초대
+
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/ef4e7f29-ca9a-4814-b0d2-f6f53477ddd4">
+</div>
+
 - 가족의 이메일을 입력하여 가족을 초대할 수 있으며, 입력한 이메일로 초대 메일이 전송됩니다.
 - 초대를 받은 회원은 가족이 입력한 이메일을 사용하여 회원가입하면 초대가 완료됩니다.
   
@@ -397,6 +404,11 @@
 
 ### 캘린더
 <!-- 조회부 GIF -->
+
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/80ca9fa9-e46e-4306-a4b0-bebafe914850">
+</div>
+
 - 한 달 간의 가족 일정을 조회할 수 있으며 각각의 일정은 알고리즘이 정한 순서에 따라 보기좋게 배치됩니다.
 
 	<details>
@@ -614,7 +626,11 @@
     
     ```
     </details>
-    
+
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/79c2cd14-05de-4a00-8d0c-4f22026829d6">
+</div>
+
 - '오늘' '다음 월' '이전 월' 버튼과 연도 드롭다운을 통해 편리하게 원하는 월로 이동할 수 있습니다.
 -  해상도가 16:9 환경에서는 5행(6주인 월에는 6행), 16:10 환경에서는 6행의 캘린더를 보여주고, 셀의 height값에 맞게 일정이 표시됩니다.
       <details>
@@ -667,8 +683,17 @@
       };
       ```
       </details>
+
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/ae53c801-ce13-4833-8c1f-dc5eace33471">
+</div>
+
 -  한 날짜에 모든 일정을 보여주지 못할 경우 'n개 더보기'를 표시하고, 해당 날짜의 전체 일정을 확인할 수 있는 모달창을 띄어줍니다.
-<!-- 추가 GIF -->
+
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/8757f5f3-031c-42b8-a384-956a693ae70c">
+</div>
+
 - '일정 추가' 버튼 또는 일정 셀을 클릭해 클릭한 날짜에 일정을 추가할 수 있습니다.
 - 반복 주기(5가지)와 종료일 또는 종료 횟수를 직접 정하여 반복되는 일정을 추가할 수 있습니다.
    <details>
@@ -904,10 +929,17 @@
     ```
     </details>
     
-<!-- 상세조회 / 수정 / 삭제 GIF -->
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/562b3d6a-7c55-4060-bc8d-2d183bbe759b">
+</div>
+
 - 등록된 일정을 클릭하면 세부 내용을 확인하고, 수정 또는 삭제할 수 있습니다.
 
 ### 메모
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/d3034b54-c239-43cf-9845-4102609e85dc">
+</div>
+
 - 포스트잇과 비슷한 형태의 메모를 작성할 수 있습니다.
 - 최신 일정순으로 정렬되며 무한스크롤을 지원합니다.
 - 작성자 본인만이 메모를 수정하거나 삭제 할 수 있습니다.
@@ -920,7 +952,6 @@
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/5ef99699-3497-4486-8bcf-bfa0c66f7528" width=70%>
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/2d9e78ad-f5c5-4708-839c-9199dca303ad" width=70%>
 	<img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Back/assets/97303815/7145c35a-dff7-4b0c-a782-8efa6fed3a53" width=70%>
-
 </div>
 
 - 가족 구성원이 회의록, 식단, 건의사항 등 카테고리를 지정하고 사진과 글을 포스팅할 수 있는 기능입니다.
@@ -929,6 +960,10 @@
 
 
 ### 건강 차트
+<div>
+     <img src="https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/115dc429-14c7-4c4b-88a8-f3b21aea7734">
+</div>
+
 - 혈당, 걸음수, 맥박 데이터를 그래프로 직관적으로 표시합니다.
 - 사이드바에서 인원별, 기간별(1, 3, 6개월) 필터링을 지원합니다.
 - 입력페이지에서 데이터를 손쉽게 추가 및 수정(모달)할 수 있습니다.
