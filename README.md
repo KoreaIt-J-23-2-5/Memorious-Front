@@ -177,8 +177,7 @@
 #### [🔗요구사항명세서 바로가기](https://platinum-infinity-b08.notion.site/1-77e4fdb543504afd90accdc80f808117?pvs=4)
 
 #### [🔗화면 정의서 바로가기](https://www.figma.com/community/file/1317744980901381622/memorious-team-library)
-![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/b8909921-3f4d-4dde-ac85-d3f23370de47)
-
+![Image](https://github.com/user-attachments/assets/8df63751-4818-47e8-8d59-433dce62fe8e)
 
 #### [🔗API 명세서 바로 가기](https://platinum-infinity-b08.notion.site/3-API-888f25b818f24f9abfce0d1f1c274c8b?pvs=4)
 ![image](https://github.com/KoreaIt-J-23-2-5/Memorious-Front/assets/133538833/0311141a-b0ad-4fcd-a846-7747f09fcba0)
